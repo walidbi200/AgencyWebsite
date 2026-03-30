@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DossierPro Germany | Ausbildung Blueprint</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { 
+                        cairo: ['Cairo', 'sans-serif'],
+                        inter: ['Inter', 'sans-serif']
+                    },
+                    colors: {
+                        gerBlack: '#111111',
+                        gerRed: '#E3000F',
+                        gerGold: '#FFCE00',
+                        waGreen: '#25D366'
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body { font-family: 'Cairo', sans-serif; background-color: #F8F9FA; scroll-behavior: smooth; }
+        .font-inter { font-family: 'Inter', sans-serif; }
+        
+        /* Interactive Hover Effects */
+        .card-hover { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .card-hover:hover { transform: translateY(-5px); box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04); }
+
+        /* Fake WhatsApp Proof */
+        .wa-wall { background-color: #EFEAE2; background-image: url('https://www.transparenttextures.com/patterns/cubes.png'); }
+        .wa-msg {
+            background: #FFF;
+            border-radius: 8px 0px 8px 8px;
+            padding: 12px 16px;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+            position: relative;
+            margin-bottom: 1rem;
+            width: fit-content;
+            max-width: 90%;
+        }
+        .wa-msg::after {
+            content: ''; position: absolute; top: 0; right: -8px;
+            border-top: 0px solid transparent; border-left: 8px solid #FFF; border-bottom: 10px solid transparent;
+        }
+
+        /* Float Animation */
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-8px); }
+        }
+        .floating-btn { animation: float 3s ease-in-out infinite; }
+
+        /* Button Glow Animation */
+        @keyframes glow {
+            0% { box-shadow: 0 0 5px rgba(227,0,15,0.2); }
+            50% { box-shadow: 0 0 20px rgba(227,0,15,0.7), 0 0 30px rgba(227,0,15,0.5); }
+            100% { box-shadow: 0 0 5px rgba(227,0,15,0.2); }
+        }
+        .btn-glow { animation: glow 2s ease-in-out infinite; }
+    </style>
+</head>
+<body class="text-gray-800 antialiased overflow-x-hidden">
+
+    <header class="bg-gerBlack text-white pt-16 pb-24 px-4 relative">
+        <div class="absolute top-4 right-4 bg-white/10 border border-white/20 backdrop-blur-md rounded-full px-4 py-2 flex items-center gap-2 text-sm font-bold shadow-lg">
+            <span class="w-3 h-3 bg-gerRed rounded-full animate-pulse"></span>
+            مباشر: <span id="live-count" class="font-inter text-gerGold text-lg transition-opacity duration-300">--</span> طالب يتصفحون الآن
+        </div>
+
+        <div class="max-w-4xl mx-auto text-center mt-6">
+            <h1 class="text-4xl md:text-6xl font-black leading-tight mb-6">
+                طريقك المضمون لـ <span class="text-gerGold font-inter">Ausbildung</span> يبدأ من هنا
+            </h1>
+            <p class="text-lg md:text-xl text-gray-300 font-semibold mb-8 leading-relaxed max-w-2xl mx-auto">
+                نعتمد على <span class="text-white">قاعدة بيانات دقيقة</span> و <span class="text-gerRed">توقيت استراتيجي</span> لضمان وصول ملفك وفتحه مباشرة من طرف مسؤولي الموارد البشرية (HR) في ألمانيا.
+            </p>
+            <a href="#packages" class="inline-block bg-gerGold text-gerBlack font-black text-xl px-10 py-4 rounded-xl shadow-[0_0_20px_rgba(255,206,0,0.4)] hover:bg-yellow-400 transition-colors">
+                اختر باقتك الآن <i class="fa-solid fa-chevron-down mr-2"></i>
+            </a>
+        </div>
+    </header>
+
+    <section id="packages" class="py-16 px-4 bg-white -mt-10 rounded-t-3xl relative z-10 shadow-sm">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch pt-6 md:pt-0">
+                
+                <!-- Card 1 -->
+                <div class="bg-[#1a1a1a] text-white rounded-2xl p-6 flex flex-col h-full shadow-lg transition-transform duration-300 hover:scale-105 border border-gray-800">
+                    <h3 class="text-2xl font-black font-inter mb-2 text-left" dir="ltr">Die Profi-Liste</h3>
+                    <div class="text-4xl font-black mb-6 font-inter text-left" dir="ltr">300 <span class="text-xl text-gray-400 font-cairo">درهم</span></div>
+                    <ul class="space-y-4 mb-8 text-base font-semibold text-gray-300 flex-grow text-right leading-relaxed" dir="rtl">
+                        <li class="flex items-start gap-3"><span class="text-lg">✅</span> <span>أزيد من 1000 شركة مفحوصة بدقة ومقسمة حسب التخصص.</span></li>
+                        <li class="flex items-start gap-3"><span class="text-lg">✅</span> <span>إيميلات مباشرة لمسؤولي التوظيف (Direct HR).</span></li>
+                        <li class="flex items-start gap-3"><span class="text-lg">✅</span> <span>أرقام هواتف الشركات وأسماء المديرين.</span></li>
+                        <li class="flex items-start gap-3"><span class="text-lg">✅</span> <span>تحديثات أسبوعية للشركات النشطة فـ 2026.</span></li>
+                    </ul>
+                    <a href="https://wa.me/212652160514?text=Hello%20DossierPro%20I%20am%20interested%20in%20Die%20Profi-Liste" target="_blank" class="w-full block text-center bg-gray-800 border border-gray-600 hover:bg-gerGold hover:text-gerBlack hover:border-gerGold text-white font-bold py-3 rounded-xl transition-all duration-300 mt-auto">اطلب اللائحة الآن</a>
+                </div>
+
+                <!-- Card 2 (Highlighted) -->
+                <div class="bg-[#0a0a0a] text-white rounded-2xl p-8 flex flex-col h-full shadow-2xl transition-transform duration-300 md:scale-105 hover:scale-110 border-2 border-gerGold relative z-10 md:-translate-y-2">
+                    <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-gerGold text-gerBlack font-black px-6 py-1.5 rounded-full text-sm shadow-[0_0_10px_rgba(255,206,0,0.5)] whitespace-nowrap">
+                        🔥 الأكثر طلباً
+                    </div>
+                    <h3 class="text-3xl font-black font-inter mb-2 text-left" dir="ltr">Das Erfolgs-Paket</h3>
+                    <div class="text-5xl font-black mb-6 font-inter text-gerGold text-left" dir="ltr">500 <span class="text-xl text-gray-300 font-cairo">درهم</span></div>
+                    <ul class="space-y-4 mb-8 text-base font-semibold text-gray-200 flex-grow text-right leading-relaxed bg-white/5 p-4 rounded-xl" dir="rtl">
+                        <li class="flex items-start gap-3"><span class="text-lg">🌟</span> <span>تجهيز شامل: صياغة ملفك بـ لغة ألمانية تقنية (B1/B2 Level).</span></li>
+                        <li class="flex items-start gap-3"><span class="text-lg">🚀</span> <span>الإرسال الذكي: نرسل طلبك لـ 200 شركة فـ "الساعات الذهبية".</span></li>
+                        <li class="flex items-start gap-3"><span class="text-lg">👁️</span> <span>نظام تتبع حي: تقرير أسبوعي لفتح الإيميلات والتحميلات.</span></li>
+                        <li class="flex items-start gap-3"><span class="text-lg">🎯</span> <span>Interview Prep: دليل مجاني لأهم 50 سؤال فـ المقابلة.</span></li>
+                    </ul>
+                    <a href="https://wa.me/212652160514?text=Hello%20DossierPro%20I%20am%20interested%20in%20Das%20Erfolgs-Paket" target="_blank" class="w-full block text-center bg-gerRed hover:bg-red-700 text-white font-black text-xl py-4 rounded-xl transition-all btn-glow shadow-lg mt-auto">ابدأ طريق النجاح الآن</a>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-[#1a1a1a] text-white rounded-2xl p-6 flex flex-col h-full shadow-lg transition-transform duration-300 hover:scale-105 border border-gray-800">
+                    <h3 class="text-2xl font-black font-inter mb-2 text-left" dir="ltr">Das Profi-Dossier</h3>
+                    <div class="text-4xl font-black mb-6 font-inter text-left" dir="ltr">300 <span class="text-xl text-gray-400 font-cairo">درهم</span></div>
+                    <ul class="space-y-4 mb-8 text-base font-semibold text-gray-300 flex-grow text-right leading-relaxed" dir="rtl">
+                        <li class="flex items-start gap-3"><span class="text-lg">✅</span> <span>CV Modern: سيرة ذاتية متوافقة مع أنظمة الـ ATS الألمانية.</span></li>
+                        <li class="flex items-start gap-3"><span class="text-lg">✅</span> <span>Anschreiben مخصص: رسالة تحفيزية مقنعة لكل تخصص.</span></li>
+                        <li class="flex items-start gap-3"><span class="text-lg">✅</span> <span>لغة احترافية: مراجعة لغوية شاملة للمصطلحات التقنية.</span></li>
+                        <li class="flex items-start gap-3"><span class="text-lg">✅</span> <span>تعديلات مرنة: دعم التعديل لـ 3 تخصصات مختلفة.</span></li>
+                    </ul>
+                    <a href="https://wa.me/212652160514?text=Hello%20DossierPro%20I%20am%20interested%20in%20Das%20Profi-Dossier" target="_blank" class="w-full block text-center bg-gray-800 border border-gray-600 hover:bg-gerGold hover:text-gerBlack hover:border-gerGold text-white font-bold py-3 rounded-xl transition-all duration-300 mt-auto">جهز ملفك الآن</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 px-4 bg-gray-50 border-y border-gray-200">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-black text-gerBlack mb-4">مكتبة DossierPro: كل ما تحتاجه للنجاح <span class="text-gerRed">مجاناً</span> 🎁</h2>
+                <p class="text-gray-600 font-semibold text-lg">بدون تسجيل، بدون إيميل. حمل وبدا تخدم على راسك دابا.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                
+                <div class="bg-white border border-gray-200 rounded-xl p-5 flex items-center justify-between hover:border-gerGold transition-colors shadow-sm">
+                    <div class="flex items-center gap-4">
+                        <div class="bg-gray-100 p-3 rounded-lg text-gray-600">
+                            <i class="fa-solid fa-file-pdf text-2xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-800">قالب CV ألماني (Muster)</h4>
+                            <p class="text-sm text-gray-500">جاهز للتعديل بصيغة PDF/Word</p>
+                        </div>
+                    </div>
+                    <a href="#" class="bg-gray-100 hover:bg-gray-200 text-gerBlack font-bold py-2 px-4 rounded-lg transition-colors text-sm">تحميل <i class="fa-solid fa-download ml-1"></i></a>
+                </div>
+
+                <div class="bg-white border border-gray-200 rounded-xl p-5 flex items-center justify-between hover:border-gerGold transition-colors shadow-sm">
+                    <div class="flex items-center gap-4">
+                        <div class="bg-gray-100 p-3 rounded-lg text-gray-600">
+                            <i class="fa-solid fa-envelope-open-text text-2xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-800">هيكل Motivation Letter</h4>
+                            <p class="text-sm text-gray-500">الطريقة الصحيحة لإقناع الـ HR</p>
+                        </div>
+                    </div>
+                    <a href="#" class="bg-gray-100 hover:bg-gray-200 text-gerBlack font-bold py-2 px-4 rounded-lg transition-colors text-sm">عرض <i class="fa-solid fa-eye ml-1"></i></a>
+                </div>
+
+                <div class="bg-white border border-gray-200 rounded-xl p-5 flex items-center justify-between hover:border-gerGold transition-colors shadow-sm">
+                    <div class="flex items-center gap-4">
+                        <div class="bg-gray-100 p-3 rounded-lg text-gray-600">
+                            <i class="fa-solid fa-comments text-2xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-800">أهم 20 سؤال في الـ Interview</h4>
+                            <p class="text-sm text-gray-500">مع الإجابات النموذجية بالألمانية</p>
+                        </div>
+                    </div>
+                    <a href="#" class="bg-gray-100 hover:bg-gray-200 text-gerBlack font-bold py-2 px-4 rounded-lg transition-colors text-sm">تحميل <i class="fa-solid fa-download ml-1"></i></a>
+                </div>
+
+                <div class="bg-white border border-gray-200 rounded-xl p-5 flex items-center justify-between hover:border-gerGold transition-colors shadow-sm">
+                    <div class="flex items-center gap-4">
+                        <div class="bg-gray-100 p-3 rounded-lg text-gray-600">
+                            <i class="fa-solid fa-list-check text-2xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-800">عينة 50 شركة ألمانية</h4>
+                            <p class="text-sm text-gray-500">إيميلات حقيقية تبحث عن متدربين الآن</p>
+                        </div>
+                    </div>
+                    <a href="#" class="bg-gray-100 hover:bg-gray-200 text-gerBlack font-bold py-2 px-4 rounded-lg transition-colors text-sm">عرض <i class="fa-solid fa-eye ml-1"></i></a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 px-4 wa-wall">
+        <div class="max-w-3xl mx-auto">
+            <div class="text-center mb-10">
+                <h2 class="text-2xl md:text-3xl font-bold text-gerBlack bg-white inline-block px-6 py-3 rounded-xl shadow-sm border border-gray-100">
+                    شهادات الشباب من داخل الواتساب 💬
+                </h2>
+            </div>
+            
+            <div class="flex flex-col gap-4">
+                <div class="wa-msg ml-auto">
+                    <p class="text-gray-800 font-semibold text-sm md:text-base">الخوت صراحة خدمة نقية، الدوسي ديالي تقبل اليوم وغندير الأنترفيو السيمانة الجاية! شكرا على التوقيت الاستراتيجي ديالكم 🙏</p>
+                    <div class="text-xs text-gray-400 mt-2 flex justify-end items-center gap-1 font-inter">
+                        10:24 AM <i class="fa-solid fa-check-double text-blue-500"></i>
+                    </div>
+                </div>
+                
+                <div class="wa-msg ml-auto">
+                    <p class="text-gray-800 font-semibold text-sm md:text-base">الـ CV اللي صايبتو ليا هربان، الـ HR قالي بلي عجبو بزاف حيت منظم على الطريقة الألمانية ومافيهش الزواق الخاوي.</p>
+                    <div class="text-xs text-gray-400 mt-2 flex justify-end items-center gap-1 font-inter">
+                        14:15 PM <i class="fa-solid fa-check-double text-blue-500"></i>
+                    </div>
+                </div>
+
+                <div class="wa-msg ml-auto">
+                    <p class="text-gray-800 font-semibold text-sm md:text-base">خديت الباقة الشاملة وارتاحيت، درتو خدمتكم متقونة ومن البارح لليوم جاني الرد الأول. الله يحفظكم الدراري 🔥</p>
+                    <div class="text-xs text-gray-400 mt-2 flex justify-end items-center gap-1 font-inter">
+                        18:05 PM <i class="fa-solid fa-check-double text-blue-500"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gerBlack text-center py-8 border-t border-gray-800">
+        <p class="text-gray-500 font-inter text-sm">&copy; 2026 DossierPro Germany. All rights reserved.</p>
+    </footer>
+
+    <a href="https://wa.me/212652160514" target="_blank" class="floating-btn fixed bottom-6 left-6 bg-waGreen text-white p-4 rounded-full shadow-[0_4px_15px_rgba(37,211,102,0.4)] hover:bg-green-500 transition-colors z-50 flex items-center justify-center w-16 h-16">
+        <i class="fa-brands fa-whatsapp text-3xl"></i>
+    </a>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const countEl = document.getElementById('live-count');
+            
+            // Start with a random number
+            let currentCount = Math.floor(Math.random() * (22 - 14 + 1)) + 14;
+            countEl.innerText = currentCount;
+
+            // Fluctuate every few seconds
+            setInterval(() => {
+                const change = Math.floor(Math.random() * 3) - 1; // -1, 0, or +1
+                currentCount += change;
+
+                // Keep bounds realistic
+                if(currentCount < 14) currentCount = 14 + Math.floor(Math.random() * 2);
+                if(currentCount > 25) currentCount = 25 - Math.floor(Math.random() * 2);
+
+                // UI update with a slight fade
+                countEl.style.opacity = 0;
+                setTimeout(() => {
+                    countEl.innerText = currentCount;
+                    countEl.style.opacity = 1;
+                }, 300);
+
+            }, 5000); // 5 seconds interval
+        });
+    </script>
+</body>
+</html>

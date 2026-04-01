@@ -1,0 +1,207 @@
+
+<style>
+  body { margin: 0; font-family: var(--font-sans); }
+  .wrap { padding: 1.5rem 1rem; }
+  .section { margin-bottom: 2rem; }
+  .section-title { font-size: 13px; font-weight: 500; color: var(--color-text-secondary); text-transform: uppercase; letter-spacing: .06em; margin-bottom: .75rem; padding-bottom: .4rem; border-bottom: 1px solid var(--color-border-tertiary); }
+  .card { background: var(--color-background-secondary); border: 1px solid var(--color-border-tertiary); border-radius: var(--border-radius-lg); padding: 1rem 1.25rem; margin-bottom: .75rem; }
+  .card-row { display: flex; align-items: flex-start; gap: .75rem; }
+  .badge { font-size: 11px; font-weight: 500; padding: 2px 8px; border-radius: 20px; white-space: nowrap; flex-shrink: 0; margin-top: 1px; }
+  .b-red   { background: #FCEBEB; color: #A32D2D; }
+  .b-amber { background: #FAEEDA; color: #854F0B; }
+  .b-green { background: #EAF3DE; color: #3B6D11; }
+  .b-blue  { background: #E6F1FB; color: #185FA5; }
+  .b-gray  { background: #F1EFE8; color: #5F5E5A; }
+  .card-title { font-size: 14px; font-weight: 500; color: var(--color-text-primary); margin-bottom: .2rem; }
+  .card-desc  { font-size: 13px; color: var(--color-text-secondary); line-height: 1.6; }
+  .score-row  { display: flex; gap: .5rem; flex-wrap: wrap; margin-bottom: 1.5rem; }
+  .score-pill { background: var(--color-background-secondary); border: 1px solid var(--color-border-tertiary); border-radius: var(--border-radius-lg); padding: .6rem 1rem; font-size: 13px; color: var(--color-text-primary); }
+  .score-pill strong { display: block; font-size: 22px; font-weight: 500; margin-bottom: 2px; }
+  .score-pill span { font-size: 11px; color: var(--color-text-secondary); }
+  .tag { display: inline-block; font-size: 11px; background: var(--color-background-tertiary); color: var(--color-text-secondary); border-radius: 4px; padding: 1px 6px; margin-left: 6px; }
+  @media (prefers-color-scheme: dark) {
+    .b-red   { background: #501313; color: #F09595; }
+    .b-amber { background: #412402; color: #FAC775; }
+    .b-green { background: #173404; color: #C0DD97; }
+    .b-blue  { background: #042C53; color: #B5D4F4; }
+    .b-gray  { background: #2C2C2A; color: #B4B2A9; }
+  }
+</style>
+<div class="wrap">
+  <div style="font-size:18px;font-weight:500;color:var(--color-text-primary);margin-bottom:.3rem">DossierPro Germany — Site Audit</div>
+  <div style="font-size:13px;color:var(--color-text-secondary);margin-bottom:1.5rem">index.html + landing.html · Arabic RTL · Ausbildung placement agency</div>
+
+  <div class="score-row">
+    <div class="score-pill"><strong>✅ Strong</strong><span>Offer clarity</span></div>
+    <div class="score-pill"><strong>✅ Strong</strong><span>Social proof UI</span></div>
+    <div class="score-pill"><strong>⚠️ Weak</strong><span>Trust signals</span></div>
+    <div class="score-pill"><strong>⚠️ Weak</strong><span>Lead capture</span></div>
+    <div class="score-pill"><strong>❌ Missing</strong><span>SEO basics</span></div>
+    <div class="score-pill"><strong>❌ Missing</strong><span>Tracking</span></div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">🔴 Critical fixes — do these first</div>
+
+    <div class="card">
+      <div class="card-row">
+        <span class="badge b-red">Security</span>
+        <div>
+          <div class="card-title">Full emails exposed in JS source</div>
+          <div class="card-desc">All <code>fullEmail</code> values (e.g. nicole.clausen@dhl.com, lina.wehr@basf.com) are plaintext in the JS data object. Anyone can open DevTools and copy them without paying. Move the full emails server-side or behind an API that checks payment status before revealing them.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-row">
+        <span class="badge b-red">Conversion</span>
+        <div>
+          <div class="card-title">No lead capture form — only WhatsApp CTAs</div>
+          <div class="card-desc">All 3 pricing cards send the visitor to WhatsApp. If someone isn't on mobile or doesn't want to open WhatsApp, they leave. Add an email opt-in or a simple embedded form (Tally, Typeform, or even a mailto form) as a fallback path. This also means you collect zero leads passively.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-row">
+        <span class="badge b-red">Trust</span>
+        <div>
+          <div class="card-title">Fake live-visitor counter</div>
+          <div class="card-desc">The "مباشر: -- طالب يتصفحون الآن" badge uses a random number generator, not real data. Sophisticated visitors will notice this (especially if they reload and see a wildly different number), which destroys trust for a service where trust is everything. Either remove it or replace it with a real counter (e.g. via a simple Supabase realtime query).</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-row">
+        <span class="badge b-red">Legal</span>
+        <div>
+          <div class="card-title">No privacy policy, no terms, no refund policy</div>
+          <div class="card-desc">You're collecting WhatsApp contacts and selling a paid service. Moroccan and EU visitors both expect (and legally in some cases require) a privacy statement. Without it, many users won't pay. Add a simple footer with a 3-line privacy note and a refund/guarantee policy — it's also a strong conversion booster.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">🟡 High-impact improvements</div>
+
+    <div class="card">
+      <div class="card-row">
+        <span class="badge b-amber">SEO</span>
+        <div>
+          <div class="card-title">Zero SEO meta tags</div>
+          <div class="card-desc">No <code>&lt;meta description&gt;</code>, no Open Graph tags (og:title, og:image), no canonical URL. If someone shares the link on WhatsApp or Facebook it shows a blank preview. Add at minimum: description, og:title, og:description, og:image (a 1200×630 branded image), and og:url.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-row">
+        <span class="badge b-amber">Analytics</span>
+        <div>
+          <div class="card-title">No analytics or event tracking</div>
+          <div class="card-desc">You have no way of knowing how many people visit, which package they look at most, or where they drop off. Add Google Analytics 4 (free) or Plausible (privacy-friendly, €9/mo). At minimum, add a click event on each WhatsApp CTA so you know your conversion rate per package.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-row">
+        <span class="badge b-amber">Conversion</span>
+        <div>
+          <div class="card-title">No urgency mechanism that's real</div>
+          <div class="card-desc">The "🔥 الأكثر طلباً" badge is good but static. Consider adding a real scarcity element — e.g. "نقبل 5 طلبات فقط هذا الأسبوع" (only 5 slots this week) with an actual counter stored server-side, or a countdown timer to a weekly deadline. Real scarcity converts better than fake social proof.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-row">
+        <span class="badge b-amber">Trust</span>
+        <div>
+          <div class="card-title">WhatsApp testimonials look fabricated</div>
+          <div class="card-desc">The WA-style chat bubbles are a clever UI pattern but anonymous. Add at minimum: a first name + city, a date, and ideally a profile photo (even blurred/initials). Bonus: link to a real Google review or a TikTok/Reels success story. Even one real video testimonial crushes 20 text bubbles.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-row">
+        <span class="badge b-amber">UX</span>
+        <div>
+          <div class="card-title">Two near-identical HTML files (index + landing)</div>
+          <div class="card-desc">Both files share 99% of the same code and data. This is a maintenance nightmare — every update must be made twice, and they can drift out of sync. Consolidate into one file, or use a simple static site generator (Astro, 11ty) or even a shared JS import to share the data/components.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">🟢 Tools & features to add</div>
+
+    <div class="card">
+      <div class="card-row">
+        <span class="badge b-green">Tool</span>
+        <div>
+          <div class="card-title">AI-powered Ausbildung match quiz <span class="tag">high impact</span></div>
+          <div class="card-desc">Add a 5-question quiz: "What's your education level? What city do you prefer? What field?". Output a personalised package recommendation + tailored WhatsApp message. This increases time-on-site and filters serious leads. Can be built as a Claude-powered artifact in 1 session.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-row">
+        <span class="badge b-green">Tool</span>
+        <div>
+          <div class="card-title">Free Anschreiben (cover letter) generator</div>
+          <div class="card-desc">A simple AI-powered form: user enters name, field of interest, and language level → generates a ready-to-use German cover letter. This is a massive lead magnet. Collect their WhatsApp/email before showing the result. Builds trust and filters qualified leads from tyre-kickers.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-row">
+        <span class="badge b-green">Tool</span>
+        <div>
+          <div class="card-title">Progress tracker for paying clients</div>
+          <div class="card-desc">A private page (or WhatsApp-linked) where clients can see "Applications sent: 47 / 200 · Opened: 12 · Replies: 2". Even a static version you update manually builds enormous trust and reduces "where is my file?" WhatsApp messages from clients.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-row">
+        <span class="badge b-blue">Content</span>
+        <div>
+          <div class="card-title">Blog / FAQ section in Arabic</div>
+          <div class="card-desc">Articles like "كيف تكتب CV ألماني من المغرب" (how to write a German CV from Morocco) drive organic search traffic from Google. Your audience is actively searching these questions. Even 5 well-written articles can bring consistent free traffic over time.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-row">
+        <span class="badge b-blue">UX</span>
+        <div>
+          <div class="card-title">Sticky WhatsApp floating button</div>
+          <div class="card-desc">On mobile, the CTA buttons inside package cards are far down the page. Add a persistent floating WhatsApp button (bottom-right, outside the normal scroll flow) so the path to contact is always one tap away, regardless of where the user is on the page.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">✅ What's already working well</div>
+    <div class="card">
+      <div class="card-desc" style="line-height:2">
+        <strong style="color:var(--color-text-primary)">Package structure</strong> — 3-tier pricing with a highlighted "most popular" middle tier is textbook conversion architecture.<br>
+        <strong style="color:var(--color-text-primary)">Company database preview</strong> — the blurred email table is a smart "show don't tell" for the Pro List. Very effective.<br>
+        <strong style="color:var(--color-text-primary)">Interview prep content</strong> — the 50 Q&amp;A accordion is genuinely valuable free content that builds authority.<br>
+        <strong style="color:var(--color-text-primary)">German branding (gerBlack/gerRed/gerGold)</strong> — consistent, on-theme, professional-looking for the target audience.<br>
+        <strong style="color:var(--color-text-primary)">Mobile-first Arabic RTL</strong> — Cairo font + Tailwind RTL layout works well for your audience.
+      </div>
+    </div>
+  </div>
+</div>

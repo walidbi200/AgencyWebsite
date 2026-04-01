@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+    <!-- Circular Mask -->
+    <clipPath id="circleView">
+        <circle cx="256" cy="256" r="256" />
+    </clipPath>
+    <g clip-path="url(#circleView)">
+        <rect width="512" height="171" y="0" fill="#111111"/>
+        <rect width="512" height="170" y="171" fill="#E3000F"/>
+        <rect width="512" height="171" y="341" fill="#FFCE00"/>
+    </g>
+</svg>

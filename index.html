@@ -5,11 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DossierPro Germany | Ausbildung Blueprint</title>
-    <meta name="description" content="احصل على تدريب مهني (Ausbildung) في ألمانيا مع DossierPro. نوفر لك قوالب سيرة ذاتية احترافية وقاعدة بيانات ضخمة للشركات لضمان قبولك.">
+    <meta name="description"
+        content="احصل على تدريب مهني (Ausbildung) في ألمانيا مع DossierPro. نوفر لك قوالب سيرة ذاتية احترافية وقاعدة بيانات ضخمة للشركات لضمان قبولك.">
     <meta property="og:title" content="DossierPro Germany | Ausbildung Blueprint">
-    <meta property="og:description" content="احصل على تدريب مهني (Ausbildung) في ألمانيا مع DossierPro. نوفر لك قوالب سيرة ذاتية احترافية وقاعدة بيانات ضخمة للشركات لضمان قبولك.">
+    <meta property="og:description"
+        content="احصل على تدريب مهني (Ausbildung) في ألمانيا مع DossierPro. نوفر لك قوالب سيرة ذاتية احترافية وقاعدة بيانات ضخمة للشركات لضمان قبولك.">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://via.placeholder.com/1200x630.png?text=DossierPro+Germany">
+    <meta property="og:image" content="/og-image.png">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -49,6 +51,8 @@
         .font-inter {
             font-family: 'Inter', sans-serif;
         }
+
+
 
         
         /* Interactive Hover Effects */
@@ -285,142 +289,183 @@
         </div>
     </header>
 
-    <section id="packages" class="py-16 px-4 bg-white -mt-10 rounded-t-3xl relative z-10 shadow-sm">
+    <section id="packages" class="py-20 px-4 bg-white -mt-10 rounded-t-3xl relative z-10 shadow-sm">
         <div class="max-w-6xl mx-auto">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch pt-6 md:pt-0">
-
-                <!-- Card 1 -->
-                <div
-                    class="bg-[#1a1a1a] text-white rounded-2xl p-6 flex flex-col h-full shadow-lg transition-transform duration-300 hover:scale-105 border border-gray-800">
-                    <h3 class="text-xl font-black font-cairo mb-2 text-right" dir="rtl">قائمة إيميلات جاهزة لإرسال طلب الأوسبيلدونغ الخاص بك</h3>
-                    <div class="text-4xl font-black mb-6 font-inter text-left" dir="ltr">300 <span
-                            class="text-xl text-gray-400 font-cairo">درهم</span></div>
-                    <ul class="space-y-4 mb-8 text-base font-semibold text-gray-300 flex-grow text-right leading-relaxed"
-                        dir="rtl">
-                        <li class="flex items-start gap-3"><span class="text-lg">✅</span> <span>أزيد من 1000 شركة مفحوصة
-                                بدقة ومقسمة حسب التخصص.</span></li>
-                        <li class="flex items-start gap-3"><span class="text-lg">✅</span> <span>إيميلات مباشرة لمسؤولي
-                                التوظيف (Direct HR).</span></li>
-                        <li class="flex items-start gap-3"><span class="text-lg">✅</span> <span>أرقام هواتف الشركات
-                                وأسماء المديرين.</span></li>
-                        <li class="flex items-start gap-3"><span class="text-lg">✅</span> <span>تحديثات أسبوعية للشركات
-                                النشطة فـ 2026.</span></li>
-                    </ul>
-                    <button onclick="openSelectionModal()" class="w-full block text-center bg-gray-800 border border-gray-600 hover:bg-gerGold hover:text-gerBlack hover:border-gerGold text-white font-bold py-3 rounded-xl transition-all duration-300 mt-auto">اطلب
-                        اللائحة الآن</button>
-                </div>
-
-                <!-- Card 2 (Highlighted) -->
-                <div
-                    class="bg-[#0a0a0a] text-white rounded-2xl p-8 flex flex-col h-full shadow-2xl transition-transform duration-300 md:scale-105 hover:scale-110 border-2 border-gerGold relative z-10 md:-translate-y-2">
+            <div class="text-center mb-10">
+                <h2 class="text-2xl font-black text-gray-400 font-inter mb-6 uppercase tracking-widest">Core Services |
+                    الخدمات الأساسية</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto">
                     <div
-                        class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-gerGold text-gerBlack font-black px-6 py-1.5 rounded-full text-sm shadow-[0_0_10px_rgba(255,206,0,0.5)] whitespace-nowrap">
-                        🔥 الأكثر طلباً
+                        class="bg-gray-50 border border-gray-200 rounded-2xl p-6 flex flex-col hover:shadow-md transition-all">
+                        <h3 class="text-lg font-black text-gerBlack mb-2 text-right" dir="rtl">قائمة الإيميلات الجاهزة
+                        </h3>
+                        <div class="text-3xl font-black font-inter text-left mb-4">199 <span
+                                class="text-sm font-cairo">درهم</span></div>
+                        <ul class="text-sm text-gray-600 text-right space-y-2 mb-6" dir="rtl">
+                            <li>✅ 1000+ شركة مفحوصة</li>
+                            <li>✅ إيميلات HR مباشرة</li>
+                        </ul>
+                        <button onclick="openSelectionModal()"
+                            class="mt-auto w-full py-2 border-2 border-gerBlack text-gerBlack font-bold rounded-lg hover:bg-gerBlack hover:text-white transition-all">اطلب
+                            الآن</button>
                     </div>
-                    <h3 class="text-2xl font-black font-cairo mb-2 text-right text-gerRed" dir="rtl">باقة النجاح المتكاملة (تجهيز، إرسال وتتبع)</h3>
-                    <div class="text-5xl font-black mb-6 font-inter text-gerGold text-left" dir="ltr">500 <span
-                            class="text-xl text-gray-300 font-cairo">درهم</span></div>
-                    <ul class="space-y-4 mb-8 text-base font-semibold text-gray-200 flex-grow text-right leading-relaxed bg-white/5 p-4 rounded-xl"
-                        dir="rtl">
-                        <li class="flex items-start gap-3"><span class="text-lg">🌟</span> <span>تجهيز شامل: صياغة ملفك
-                                بـ لغة ألمانية تقنية (B1/B2 Level).</span></li>
-                        <li class="flex items-start gap-3"><span class="text-lg">🚀</span> <span>الإرسال الذكي: نرسل
-                                طلبك لـ 200 شركة فـ "الساعات الذهبية".</span></li>
-                        <li class="flex items-start gap-3"><span class="text-lg">👁️</span> <span>نظام تتبع حي: تقرير
-                                أسبوعي لفتح الإيميلات والتحميلات.</span></li>
-                        <li class="flex items-start gap-3"><span class="text-lg">🎯</span> <span>Interview Prep: دليل
-                                مجاني لأهم 50 سؤال فـ المقابلة.</span></li>
-                    </ul>
-                    <a href="https://wa.me/212652160514?text=Hello%20DossierPro%20I%20am%20interested%20in%20Das%20Erfolgs-Paket"
-                        target="_blank"
-                        class="w-full block text-center bg-gerRed hover:bg-red-700 text-white font-black text-xl py-4 rounded-xl transition-all btn-glow shadow-lg mt-auto">ابدأ
-                        طريق النجاح الآن</a>
+                    <div
+                        class="bg-gray-50 border border-gray-200 rounded-2xl p-6 flex flex-col hover:shadow-md transition-all">
+                        <h3 class="text-lg font-black text-gerBlack mb-2 text-right" dir="rtl">تجهيز ملف Bewerbung</h3>
+                        <div class="text-3xl font-black font-inter text-left mb-4">350 <span
+                                class="text-sm font-cairo">درهم</span></div>
+                        <ul class="text-sm text-gray-600 text-right space-y-2 mb-6" dir="rtl">
+                            <li>✅ CV Modern (ATS)</li>
+                            <li>✅ Anschreiben مخصص</li>
+                        </ul>
+                        <a href="https://wa.me/212652160514"
+                            class="mt-auto w-full py-2 border-2 border-gerBlack text-gerBlack font-bold rounded-lg text-center hover:bg-gerBlack hover:text-white transition-all">جهز
+                            ملفك</a>
+                    </div>
                 </div>
+            </div>
 
-                <!-- Card 3 -->
-                <div
-                    class="bg-[#1a1a1a] text-white rounded-2xl p-6 flex flex-col h-full shadow-lg transition-transform duration-300 hover:scale-105 border border-gray-800">
-                    <h3 class="text-xl font-black font-cairo mb-2 text-right" dir="rtl">تجهيز ملف bewerbung</h3>
-                    <div class="text-4xl font-black mb-6 font-inter text-left" dir="ltr">300 <span
-                            class="text-xl text-gray-400 font-cairo">درهم</span></div>
-                    <ul class="space-y-4 mb-8 text-base font-semibold text-gray-300 flex-grow text-right leading-relaxed"
-                        dir="rtl">
-                        <li class="flex items-start gap-3"><span class="text-lg">✅</span> <span>CV Modern: سيرة ذاتية
-                                متوافقة مع أنظمة الـ ATS الألمانية.</span></li>
-                        <li class="flex items-start gap-3"><span class="text-lg">✅</span> <span>Anschreiben مخصص: رسالة
-                                تحفيزية مقنعة لكل تخصص.</span></li>
-                        <li class="flex items-start gap-3"><span class="text-lg">✅</span> <span>لغة احترافية: مراجعة
-                                لغوية شاملة للمصطلحات التقنية.</span></li>
-                        <li class="flex items-start gap-3"><span class="text-lg">✅</span> <span>تعديلات مرنة: دعم
-                                التعديل لـ 3 تخصصات مختلفة.</span></li>
-                    </ul>
-                    <a href="https://wa.me/212652160514?text=Hello%20DossierPro%20I%20am%20interested%20in%20Das%20Profi-Dossier"
-                        target="_blank"
-                        class="w-full block text-center bg-gray-800 border border-gray-600 hover:bg-gerGold hover:text-gerBlack hover:border-gerGold text-white font-bold py-3 rounded-xl transition-all duration-300 mt-auto">جهز
-                        ملفك الآن</a>
+            <hr class="border-gray-100 my-16">
+
+            <div class="text-center">
+                <h2 class="text-3xl font-black text-gerBlack mb-12" dir="rtl">باقات النجاح المتكاملة 🔥</h2>
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
+
+                    <div class="bg-gerBlack text-white rounded-3xl p-8 flex flex-col shadow-xl order-2 lg:order-1">
+                        <h3 class="text-xl font-black mb-4 text-right" dir="rtl">باقة النجاح الكاملة</h3>
+                        <div class="text-4xl font-black font-inter text-gerGold mb-6">599 <span
+                                class="text-lg">DH</span></div>
+                        <ul class="space-y-4 text-right text-gray-300 mb-8" dir="rtl">
+                            <li class="flex items-center gap-2 justify-end">تجهيز شامل للملف <span>✅</span></li>
+                            <li class="flex items-center gap-2 justify-end">إرسال لـ 200 شركة <span>✅</span></li>
+                            <li class="flex items-center gap-2 justify-end">نظام تتبع الإيميلات <span>✅</span></li>
+                        </ul>
+                        <button
+                            class="w-full py-4 bg-white text-gerBlack font-black rounded-xl hover:bg-gerGold transition-all">ابدأ
+                            الآن</button>
+                    </div>
+
+                    <div
+                        class="bg-[#0a0a0a] text-white rounded-3xl p-8 flex flex-col shadow-2xl border-4 border-gerRed transform lg:-translate-y-6 order-1 lg:order-2 relative">
+                        <div
+                            class="absolute -top-5 left-1/2 -translate-x-1/2 bg-gerRed text-white px-6 py-1 rounded-full font-black text-sm uppercase">
+                            Most Popular</div>
+                        <h3 class="text-2xl font-black mb-4 text-right text-gerRed" dir="rtl">لائحة + ملف Bewerbung</h3>
+                        <div class="text-5xl font-black font-inter text-white mb-6">499 <span class="text-xl">DH</span>
+                        </div>
+                        <ul class="space-y-4 text-right text-gray-200 mb-8 bg-white/5 p-4 rounded-xl" dir="rtl">
+                            <li class="flex items-center gap-2 justify-end">كل ما في باقة اللائحة <span>⭐</span></li>
+                            <li class="flex items-center gap-2 justify-end">كل ما في باقة Bewerbung <span>⭐</span></li>
+                            <li class="flex items-center gap-2 justify-end text-gerGold font-bold">توفير 50 درهم
+                                <span>🎁</span></li>
+                        </ul>
+                        <button class="w-full py-5 bg-gerRed text-white font-black text-xl rounded-xl btn-glow">احصل على
+                            العرض</button>
+                    </div>
+
+                    <div
+                        class="bg-gerBlack text-white rounded-3xl p-8 flex flex-col shadow-xl border-2 border-gerGold order-3">
+                        <h3 class="text-xl font-black mb-4 text-right text-gerGold" dir="rtl">الموقع الشخصي (VIP)</h3>
+                        <div class="text-4xl font-black font-inter text-gerGold mb-6">799 <span
+                                class="text-lg">DH</span></div>
+                        <ul class="space-y-4 text-right text-gray-300 mb-8" dir="rtl">
+                            <li class="flex items-center gap-2 justify-end">Portfolio Website <span>✅</span></li>
+                            <li class="flex items-center gap-2 justify-end">QR Code للـ CV <span>✅</span></li>
+                            <li class="flex items-center gap-2 justify-end text-gerGold">Professional Branding
+                                <span>💎</span></li>
+                        </ul>
+                        <button
+                            class="w-full py-4 border-2 border-gerGold text-gerGold font-black rounded-xl hover:bg-gerGold hover:text-gerBlack transition-all">اصنع
+                            بصمتك</button>
+                    </div>
+
                 </div>
-
             </div>
         </div>
     </section>
 
-    
     <section class="py-16 px-4 bg-gray-50 border-y border-gray-200" id="library">
         <div class="max-w-6xl mx-auto">
             <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-black text-gerBlack mb-4">مكتبة DossierPro: كل ما تحتاجه للنجاح <span class="text-gerRed">مجاناً</span> 🎁</h2>
-                <p class="text-gray-600 font-semibold text-lg max-w-2xl mx-auto">أدوات حصرية لمساعدتك في الحصول على عقد العمل. تصفح وحمل ما تحتاجه.</p>
+                <h2 class="text-3xl md:text-4xl font-black text-gerBlack mb-4">مكتبة DossierPro: كل ما تحتاجه للنجاح
+                    <span class="text-gerRed">مجاناً</span> 🎁</h2>
+                <p class="text-gray-600 font-semibold text-lg max-w-2xl mx-auto">أدوات حصرية لمساعدتك في الحصول على عقد
+                    العمل. تصفح وحمل ما تحتاجه.</p>
             </div>
 
             <!-- 1. Interactive Spreadsheet Pop-up -->
             <div class="bg-white rounded-3xl p-8 md:p-10 shadow-sm border border-gray-200 mb-12">
                 <div class="flex flex-col md:flex-row items-center justify-between gap-8">
                     <div class="text-right flex-1">
-                        <div class="inline-block bg-green-100 text-green-700 font-bold px-3 py-1 rounded-full text-sm mb-4 font-inter">Live Preview</div>
-                        <h3 class="text-2xl md:text-3xl font-black text-gerBlack mb-4">قاعدة بيانات الشركات النشطة (عينة 20 إيميل) 🏢</h3>
+                        <div
+                            class="inline-block bg-green-100 text-green-700 font-bold px-3 py-1 rounded-full text-sm mb-4 font-inter">
+                            Live Preview</div>
+                        <h3 class="text-2xl md:text-3xl font-black text-gerBlack mb-4">قاعدة بيانات الشركات النشطة (عينة
+                            20 إيميل) 🏢</h3>
                         <p class="text-gray-600 font-semibold text-lg mb-6 leading-relaxed">
-                            اختر التخصص ديالك وشوف عينة من الشركات الحقيقية لي كاتقلب على متدربين (Azubis) هاد السيمانة. اللائحة الكاملة (Profi-Liste) فيها 1000+ شركة.
+                            اختر التخصص ديالك وشوف عينة من الشركات الحقيقية لي كاتقلب على متدربين (Azubis) هاد السيمانة.
+                            اللائحة الكاملة (Profi-Liste) فيها 1000+ شركة.
                         </p>
-                        
+
                         <div class="flex flex-wrap gap-3 justify-end dir-rtl">
-                            <button onclick="openModal('Nursing')" class="bg-blue-50 hover:bg-blue-100 text-blue-700 border border-blue-200 font-bold py-2.5 px-5 rounded-xl transition-all flex items-center gap-2"><i class="fa-solid fa-user-nurse"></i> Pflege (تمريض)</button>
-                            <button onclick="openModal('IT')" class="bg-purple-50 hover:bg-purple-100 text-purple-700 border border-purple-200 font-bold py-2.5 px-5 rounded-xl transition-all flex items-center gap-2"><i class="fa-solid fa-code"></i> Informatik (IT)</button>
-                            <button onclick="openModal('Mechatronics')" class="bg-orange-50 hover:bg-orange-100 text-orange-700 border border-orange-200 font-bold py-2.5 px-5 rounded-xl transition-all flex items-center gap-2"><i class="fa-solid fa-cogs"></i> Mechatronik (ميكاترونيك)</button>
-                            <button onclick="openModal('Logistics')" class="bg-cyan-50 hover:bg-cyan-100 text-cyan-700 border border-cyan-200 font-bold py-2.5 px-5 rounded-xl transition-all flex items-center gap-2"><i class="fa-solid fa-box"></i> Logistik (لوجستيك)</button>
-                            <button onclick="openModal('Gastronomy')" class="bg-rose-50 hover:bg-rose-100 text-rose-700 border border-rose-200 font-bold py-2.5 px-5 rounded-xl transition-all flex items-center gap-2"><i class="fa-solid fa-utensils"></i> Gastronomie (فندقة)</button>
+                            <button onclick="openModal('Nursing')"
+                                class="bg-blue-50 hover:bg-blue-100 text-blue-700 border border-blue-200 font-bold py-2.5 px-5 rounded-xl transition-all flex items-center gap-2"><i
+                                    class="fa-solid fa-user-nurse"></i> Pflege (تمريض)</button>
+                            <button onclick="openModal('IT')"
+                                class="bg-purple-50 hover:bg-purple-100 text-purple-700 border border-purple-200 font-bold py-2.5 px-5 rounded-xl transition-all flex items-center gap-2"><i
+                                    class="fa-solid fa-code"></i> Informatik (IT)</button>
+                            <button onclick="openModal('Mechatronics')"
+                                class="bg-orange-50 hover:bg-orange-100 text-orange-700 border border-orange-200 font-bold py-2.5 px-5 rounded-xl transition-all flex items-center gap-2"><i
+                                    class="fa-solid fa-cogs"></i> Mechatronik (ميكاترونيك)</button>
+                            <button onclick="openModal('Logistics')"
+                                class="bg-cyan-50 hover:bg-cyan-100 text-cyan-700 border border-cyan-200 font-bold py-2.5 px-5 rounded-xl transition-all flex items-center gap-2"><i
+                                    class="fa-solid fa-box"></i> Logistik (لوجستيك)</button>
+                            <button onclick="openModal('Gastronomy')"
+                                class="bg-rose-50 hover:bg-rose-100 text-rose-700 border border-rose-200 font-bold py-2.5 px-5 rounded-xl transition-all flex items-center gap-2"><i
+                                    class="fa-solid fa-utensils"></i> Gastronomie (فندقة)</button>
                         </div>
                     </div>
                     <div class="w-full md:w-1/3 flex justify-center">
-                        <div class="relative w-48 h-48 bg-gray-100 rounded-2xl flex items-center justify-center border-4 border-white shadow-xl transform rotate-3 hover:rotate-0 transition-all duration-300">
+                        <div
+                            class="relative w-48 h-48 bg-gray-100 rounded-2xl flex items-center justify-center border-4 border-white shadow-xl transform rotate-3 hover:rotate-0 transition-all duration-300">
                             <i class="fa-solid fa-table text-5xl text-gray-400"></i>
-                            <div class="absolute -top-3 -right-3 bg-gerRed text-white font-black w-10 h-10 flex items-center justify-center rounded-full shadow-lg">+20</div>
+                            <div
+                                class="absolute -top-3 -right-3 bg-gerRed text-white font-black w-10 h-10 flex items-center justify-center rounded-full shadow-lg">
+                                +20</div>
                         </div>
                     </div>
                 </div>
             </div>
 
-                        <!-- 2. German CV Muster Preview -->
+            <!-- 2. German CV Muster Preview -->
             <div class="bg-gerBlack rounded-3xl p-8 md:p-10 shadow-lg text-white mb-12 relative overflow-hidden">
-                <div class="absolute top-0 right-0 w-64 h-64 bg-gerGold opacity-10 rounded-full blur-3xl transform translate-x-1/2 -translate-y-1/2"></div>
+                <div
+                    class="absolute top-0 right-0 w-64 h-64 bg-gerGold opacity-10 rounded-full blur-3xl transform translate-x-1/2 -translate-y-1/2">
+                </div>
                 <h3 class="text-2xl md:text-3xl font-black mb-2 text-right" dir="rtl">قالب CV ألماني احترافي 📄</h3>
                 <p class="text-gray-300 text-sm md:text-base font-semibold mb-8 text-right leading-relaxed" dir="rtl">
-                    هذا هو الـ <strong class="text-gerGold">Tabellarischer Lebenslauf</strong> المعتمد رسمياً والمطلوب من طرف أرباب العمل في ألمانيا. الهيكل الصحيح الذي تقبله أنظمة ATS الألمانية (بدون زينة مبالغ فيها).
+                    هذا هو الـ <strong class="text-gerGold">Tabellarischer Lebenslauf</strong> المعتمد رسمياً والمطلوب
+                    من طرف أرباب العمل في ألمانيا. الهيكل الصحيح الذي تقبله أنظمة ATS الألمانية (بدون زينة مبالغ فيها).
                 </p>
-                
-                <div class="bg-white text-gerBlack rounded-xl p-6 font-inter shadow-inner mb-8 mx-auto max-w-2xl relative" dir="ltr">
+
+                <div class="bg-white text-gerBlack rounded-xl p-6 font-inter shadow-inner mb-8 mx-auto max-w-2xl relative"
+                    dir="ltr">
                     <div class="absolute top-0 left-0 w-full h-2 bg-gerRed rounded-t-xl"></div>
                     <div class="flex items-center gap-4 mb-6 pt-4 border-b border-gray-200 pb-4">
-                        <div class="w-16 h-16 bg-gray-200 rounded-full flex flex-col justify-center items-center text-gray-500 text-xs text-center leading-tight"><span>Ohne</span><span>Foto</span></div>
+                        <div
+                            class="w-16 h-16 bg-gray-200 rounded-full flex flex-col justify-center items-center text-gray-500 text-xs text-center leading-tight">
+                            <span>Ohne</span><span>Foto</span></div>
                         <div>
                             <h4 class="text-2xl font-black text-gray-800">Vorname Nachname</h4>
                             <p class="text-gray-500 text-sm">Musterstraße 1 • 12345 Stadt • +212 600 000000</p>
                         </div>
                     </div>
-                    
+
                     <div class="mb-4">
                         <div class="flex justify-between items-end border-b-2 border-gerBlack pb-1 mb-3">
                             <h5 class="text-lg font-black text-gerBlack">Schulbildung</h5>
-                            <span class="text-xs text-blue-600 font-cairo font-bold bg-blue-50 px-2 py-1 rounded" dir="rtl">المسار الدراسي</span>
+                            <span class="text-xs text-blue-600 font-cairo font-bold bg-blue-50 px-2 py-1 rounded"
+                                dir="rtl">المسار الدراسي</span>
                         </div>
                         <div class="grid grid-cols-3 gap-4 text-sm mb-2">
                             <div class="text-gray-500 font-bold">09/2018 - 06/2021</div>
@@ -430,11 +475,12 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="mb-4">
                         <div class="flex justify-between items-end border-b-2 border-gerBlack pb-1 mb-3">
                             <h5 class="text-lg font-black text-gerBlack">Berufserfahrung</h5>
-                            <span class="text-xs text-blue-600 font-cairo font-bold bg-blue-50 px-2 py-1 rounded" dir="rtl">الخبرة المهنية</span>
+                            <span class="text-xs text-blue-600 font-cairo font-bold bg-blue-50 px-2 py-1 rounded"
+                                dir="rtl">الخبرة المهنية</span>
                         </div>
                         <div class="grid grid-cols-3 gap-4 text-sm mb-2">
                             <div class="text-gray-500 font-bold">07/2021 - 08/2021</div>
@@ -444,11 +490,12 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <div>
                         <div class="flex justify-between items-end border-b-2 border-gerBlack pb-1 mb-3">
                             <h5 class="text-lg font-black text-gerBlack">Sprachkenntnisse</h5>
-                            <span class="text-xs text-blue-600 font-cairo font-bold bg-blue-50 px-2 py-1 rounded" dir="rtl">اللغات</span>
+                            <span class="text-xs text-blue-600 font-cairo font-bold bg-blue-50 px-2 py-1 rounded"
+                                dir="rtl">اللغات</span>
                         </div>
                         <div class="grid grid-cols-3 gap-4 text-sm mb-1">
                             <div class="text-gray-500 font-bold">Arabisch</div>
@@ -460,9 +507,10 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="text-right">
-                    <a href="#" class="inline-flex items-center gap-2 bg-gerGold hover:bg-yellow-400 text-gerBlack font-black py-4 px-8 rounded-xl transition-colors shadow-lg text-lg">
+                    <a href="#"
+                        class="inline-flex items-center gap-2 bg-gerGold hover:bg-yellow-400 text-gerBlack font-black py-4 px-8 rounded-xl transition-colors shadow-lg text-lg">
                         <i class="fa-solid fa-download"></i> شارجي الملف فابور
                     </a>
                 </div>
@@ -470,120 +518,218 @@
 
             <!-- 3. Motivation Letter Hub -->
             <div class="bg-white rounded-3xl p-8 shadow-sm border border-gray-200 mb-12">
-                <h3 class="text-2xl md:text-3xl font-black text-gerBlack mb-2 text-right">نماذج رسائل التحفيز (Anschreiben) 🖋️</h3>
-                <p class="text-gray-600 font-semibold mb-8 text-right">رسالة التحفيز هي المفتاح. كل تخصص يحتاج لصياغة تركز على نقاط قوة معينة.</p>
-                
-                <div class="flex flex-row-reverse overflow-x-auto gap-1 mb-6 border-b border-gray-200 pb-2 hide-scrollbar font-inter font-bold" dir="ltr">
-                    <button class="tab-btn active px-4 py-2 text-gray-500 whitespace-nowrap" onclick="switchTab('tab-pflege')">Pflege</button>
-                    <button class="tab-btn px-4 py-2 text-gray-500 whitespace-nowrap" onclick="switchTab('tab-it')">Informatik</button>
-                    <button class="tab-btn px-4 py-2 text-gray-500 whitespace-nowrap" onclick="switchTab('tab-mech')">Mechatronik</button>
-                    <button class="tab-btn px-4 py-2 text-gray-500 whitespace-nowrap" onclick="switchTab('tab-log')">Logistik</button>
-                    <button class="tab-btn px-4 py-2 text-gray-500 whitespace-nowrap" onclick="switchTab('tab-gastro')">Gastronomie</button>
+                <h3 class="text-2xl md:text-3xl font-black text-gerBlack mb-2 text-right">نماذج رسائل التحفيز
+                    (Anschreiben) 🖋️</h3>
+                <p class="text-gray-600 font-semibold mb-8 text-right">رسالة التحفيز هي المفتاح. كل تخصص يحتاج لصياغة
+                    تركز على نقاط قوة معينة.</p>
+
+                <div class="flex flex-row-reverse overflow-x-auto gap-1 mb-6 border-b border-gray-200 pb-2 hide-scrollbar font-inter font-bold"
+                    dir="ltr">
+                    <button class="tab-btn active px-4 py-2 text-gray-500 whitespace-nowrap"
+                        onclick="switchTab('tab-pflege')">Pflege</button>
+                    <button class="tab-btn px-4 py-2 text-gray-500 whitespace-nowrap"
+                        onclick="switchTab('tab-it')">Informatik</button>
+                    <button class="tab-btn px-4 py-2 text-gray-500 whitespace-nowrap"
+                        onclick="switchTab('tab-mech')">Mechatronik</button>
+                    <button class="tab-btn px-4 py-2 text-gray-500 whitespace-nowrap"
+                        onclick="switchTab('tab-log')">Logistik</button>
+                    <button class="tab-btn px-4 py-2 text-gray-500 whitespace-nowrap"
+                        onclick="switchTab('tab-gastro')">Gastronomie</button>
                 </div>
-                
+
                 <div class="bg-gray-50 rounded-xl p-6 font-inter text-left" dir="ltr">
                     <!-- Tab Pflege -->
                     <div id="tab-pflege" class="tab-content active">
-                        <h4 class="text-xl font-black text-blue-700 mb-4 border-b border-blue-200 pb-2" dir="rtl">3 جمل سحرية للتمريض (Pflege)</h4>
+                        <h4 class="text-xl font-black text-blue-700 mb-4 border-b border-blue-200 pb-2" dir="rtl">3 جمل
+                            سحرية للتمريض (Pflege)</h4>
                         <ul class="space-y-6 text-gray-700">
-                            <li class="bg-white p-4 rounded-lg shadow-sm border border-gray-100 relative group line-hover">
-                                <div class="font-bold text-gray-900 text-base mb-2 select-all pr-8">„Mir liegt das Wohl meiner Mitmenschen sehr am Herzen, weshalb ich die Pflege als meine echte Berufung sehe.“</div>
-                                <div class="text-sm text-gray-500 font-cairo dir-rtl text-right mt-2 pt-2 border-t border-gray-100" dir="rtl">💡 <span class="text-blue-600 font-bold">للتقديم:</span> كتبين ليهم باللي هاد الدومين هو الشغف ديالك الحقيقي وغاتصبر للمسؤولية.</div>
-                                <i class="fa-regular fa-copy absolute top-4 right-4 text-gray-300 group-hover:text-blue-500 cursor-pointer transition-colors text-lg" onclick="copyText(this)"></i>
+                            <li
+                                class="bg-white p-4 rounded-lg shadow-sm border border-gray-100 relative group line-hover">
+                                <div class="font-bold text-gray-900 text-base mb-2 select-all pr-8">„Mir liegt das Wohl
+                                    meiner Mitmenschen sehr am Herzen, weshalb ich die Pflege als meine echte Berufung
+                                    sehe.“</div>
+                                <div class="text-sm text-gray-500 font-cairo dir-rtl text-right mt-2 pt-2 border-t border-gray-100"
+                                    dir="rtl">💡 <span class="text-blue-600 font-bold">للتقديم:</span> كتبين ليهم باللي
+                                    هاد الدومين هو الشغف ديالك الحقيقي وغاتصبر للمسؤولية.</div>
+                                <i class="fa-regular fa-copy absolute top-4 right-4 text-gray-300 group-hover:text-blue-500 cursor-pointer transition-colors text-lg"
+                                    onclick="copyText(this)"></i>
                             </li>
-                            <li class="bg-white p-4 rounded-lg shadow-sm border border-gray-100 relative group line-hover">
-                                <div class="font-bold text-gray-900 text-base mb-2 select-all pr-8">„Ich zeichne mich durch hohe Belastbarkeit, Empathie und die Bereitschaft zu flexiblen Arbeitszeiten aus.“</div>
-                                <div class="text-sm text-gray-500 font-cairo dir-rtl text-right mt-2 pt-2 border-t border-gray-100" dir="rtl">💡 <span class="text-blue-600 font-bold">لماذا أنت؟:</span> هادي غاتأكد ليهم بلي راك مستعد تخدم بليل وفالويكاند وبلي عندك الصبر مع المرضى.</div>
-                                <i class="fa-regular fa-copy absolute top-4 right-4 text-gray-300 group-hover:text-blue-500 cursor-pointer transition-colors text-lg" onclick="copyText(this)"></i>
+                            <li
+                                class="bg-white p-4 rounded-lg shadow-sm border border-gray-100 relative group line-hover">
+                                <div class="font-bold text-gray-900 text-base mb-2 select-all pr-8">„Ich zeichne mich
+                                    durch hohe Belastbarkeit, Empathie und die Bereitschaft zu flexiblen Arbeitszeiten
+                                    aus.“</div>
+                                <div class="text-sm text-gray-500 font-cairo dir-rtl text-right mt-2 pt-2 border-t border-gray-100"
+                                    dir="rtl">💡 <span class="text-blue-600 font-bold">لماذا أنت؟:</span> هادي غاتأكد
+                                    ليهم بلي راك مستعد تخدم بليل وفالويكاند وبلي عندك الصبر مع المرضى.</div>
+                                <i class="fa-regular fa-copy absolute top-4 right-4 text-gray-300 group-hover:text-blue-500 cursor-pointer transition-colors text-lg"
+                                    onclick="copyText(this)"></i>
                             </li>
-                            <li class="bg-white p-4 rounded-lg shadow-sm border border-gray-100 relative group line-hover">
-                                <div class="font-bold text-gray-900 text-base mb-2 select-all pr-8">„Sehr gerne überzeuge ich Sie bei einem Vorstellungsgespräch oder einem Praktikum von meiner Eignung.“</div>
-                                <div class="text-sm text-gray-500 font-cairo dir-rtl text-right mt-2 pt-2 border-t border-gray-100" dir="rtl">💡 <span class="text-blue-600 font-bold">الخاتمة:</span> كتقولهم بلي راك واجد تدوز سطاج تجريبي يلا بغاو، وهادي كتعطيهم ثقة أكثر.</div>
-                                <i class="fa-regular fa-copy absolute top-4 right-4 text-gray-300 group-hover:text-blue-500 cursor-pointer transition-colors text-lg" onclick="copyText(this)"></i>
+                            <li
+                                class="bg-white p-4 rounded-lg shadow-sm border border-gray-100 relative group line-hover">
+                                <div class="font-bold text-gray-900 text-base mb-2 select-all pr-8">„Sehr gerne
+                                    überzeuge ich Sie bei einem Vorstellungsgespräch oder einem Praktikum von meiner
+                                    Eignung.“</div>
+                                <div class="text-sm text-gray-500 font-cairo dir-rtl text-right mt-2 pt-2 border-t border-gray-100"
+                                    dir="rtl">💡 <span class="text-blue-600 font-bold">الخاتمة:</span> كتقولهم بلي راك
+                                    واجد تدوز سطاج تجريبي يلا بغاو، وهادي كتعطيهم ثقة أكثر.</div>
+                                <i class="fa-regular fa-copy absolute top-4 right-4 text-gray-300 group-hover:text-blue-500 cursor-pointer transition-colors text-lg"
+                                    onclick="copyText(this)"></i>
                             </li>
                         </ul>
                     </div>
                     <!-- Tab IT -->
                     <div id="tab-it" class="tab-content">
-                        <h4 class="text-xl font-black text-purple-700 mb-4 border-b border-purple-200 pb-2" dir="rtl">3 جمل سحرية للبرمجة (Informatik)</h4>
+                        <h4 class="text-xl font-black text-purple-700 mb-4 border-b border-purple-200 pb-2" dir="rtl">3
+                            جمل سحرية للبرمجة (Informatik)</h4>
                         <ul class="space-y-6 text-gray-700">
-                            <li class="bg-white p-4 rounded-lg shadow-sm border border-gray-100 relative group line-hover">
-                                <div class="font-bold text-gray-900 text-base mb-2 select-all pr-8">„Ich beschäftige mich bereits in meiner Freizeit intensiv mit der Programmierung und habe erste eigene Projekte umgesetzt.“</div>
-                                <div class="text-sm text-gray-500 font-cairo dir-rtl text-right mt-2 pt-2 border-t border-gray-100" dir="rtl">💡 <span class="text-purple-600 font-bold">للتقديم:</span> كتبين بلي عندك فضول وديجا كتقرا وتقاد مشاريع براسة، وهادا هو أهم معيار عندهم.</div>
-                                <i class="fa-regular fa-copy absolute top-4 right-4 text-gray-300 group-hover:text-purple-500 cursor-pointer transition-colors text-lg" onclick="copyText(this)"></i>
+                            <li
+                                class="bg-white p-4 rounded-lg shadow-sm border border-gray-100 relative group line-hover">
+                                <div class="font-bold text-gray-900 text-base mb-2 select-all pr-8">„Ich beschäftige
+                                    mich bereits in meiner Freizeit intensiv mit der Programmierung und habe erste
+                                    eigene Projekte umgesetzt.“</div>
+                                <div class="text-sm text-gray-500 font-cairo dir-rtl text-right mt-2 pt-2 border-t border-gray-100"
+                                    dir="rtl">💡 <span class="text-purple-600 font-bold">للتقديم:</span> كتبين بلي عندك
+                                    فضول وديجا كتقرا وتقاد مشاريع براسة، وهادا هو أهم معيار عندهم.</div>
+                                <i class="fa-regular fa-copy absolute top-4 right-4 text-gray-300 group-hover:text-purple-500 cursor-pointer transition-colors text-lg"
+                                    onclick="copyText(this)"></i>
                             </li>
-                            <li class="bg-white p-4 rounded-lg shadow-sm border border-gray-100 relative group line-hover">
-                                <div class="font-bold text-gray-900 text-base mb-2 select-all pr-8">„Logisches Denken und die strukturierte Lösung komplexer Probleme bereiten mir große Freude.“</div>
-                                <div class="text-sm text-gray-500 font-cairo dir-rtl text-right mt-2 pt-2 border-t border-gray-100" dir="rtl">💡 <span class="text-purple-600 font-bold">لماذا أنت؟:</span> كتشرح بلي عندك طريقة تفكير منطقية، وهادي ميزة أساسية لأي مبرمج.</div>
-                                <i class="fa-regular fa-copy absolute top-4 right-4 text-gray-300 group-hover:text-purple-500 cursor-pointer transition-colors text-lg" onclick="copyText(this)"></i>
+                            <li
+                                class="bg-white p-4 rounded-lg shadow-sm border border-gray-100 relative group line-hover">
+                                <div class="font-bold text-gray-900 text-base mb-2 select-all pr-8">„Logisches Denken
+                                    und die strukturierte Lösung komplexer Probleme bereiten mir große Freude.“</div>
+                                <div class="text-sm text-gray-500 font-cairo dir-rtl text-right mt-2 pt-2 border-t border-gray-100"
+                                    dir="rtl">💡 <span class="text-purple-600 font-bold">لماذا أنت؟:</span> كتشرح بلي
+                                    عندك طريقة تفكير منطقية، وهادي ميزة أساسية لأي مبرمج.</div>
+                                <i class="fa-regular fa-copy absolute top-4 right-4 text-gray-300 group-hover:text-purple-500 cursor-pointer transition-colors text-lg"
+                                    onclick="copyText(this)"></i>
                             </li>
-                            <li class="bg-white p-4 rounded-lg shadow-sm border border-gray-100 relative group line-hover">
-                                <div class="font-bold text-gray-900 text-base mb-2 select-all pr-8">„Gern stehe ich Ihnen für ein persönliches Gespräch oder ein technisches Assessment zur Verfügung.“</div>
-                                <div class="text-sm text-gray-500 font-cairo dir-rtl text-right mt-2 pt-2 border-t border-gray-100" dir="rtl">💡 <span class="text-purple-600 font-bold">الخاتمة:</span> كتبين ثقة بالنفس والاستعداد لأي اختبار تقني يطلبوه منك.</div>
-                                <i class="fa-regular fa-copy absolute top-4 right-4 text-gray-300 group-hover:text-purple-500 cursor-pointer transition-colors text-lg" onclick="copyText(this)"></i>
+                            <li
+                                class="bg-white p-4 rounded-lg shadow-sm border border-gray-100 relative group line-hover">
+                                <div class="font-bold text-gray-900 text-base mb-2 select-all pr-8">„Gern stehe ich
+                                    Ihnen für ein persönliches Gespräch oder ein technisches Assessment zur Verfügung.“
+                                </div>
+                                <div class="text-sm text-gray-500 font-cairo dir-rtl text-right mt-2 pt-2 border-t border-gray-100"
+                                    dir="rtl">💡 <span class="text-purple-600 font-bold">الخاتمة:</span> كتبين ثقة
+                                    بالنفس والاستعداد لأي اختبار تقني يطلبوه منك.</div>
+                                <i class="fa-regular fa-copy absolute top-4 right-4 text-gray-300 group-hover:text-purple-500 cursor-pointer transition-colors text-lg"
+                                    onclick="copyText(this)"></i>
                             </li>
                         </ul>
                     </div>
                     <!-- Tab Mechatronics -->
                     <div id="tab-mech" class="tab-content">
-                        <h4 class="text-xl font-black text-orange-700 mb-4 border-b border-orange-200 pb-2" dir="rtl">3 جمل سحرية للميكاترونيك (Mechatronik)</h4>
+                        <h4 class="text-xl font-black text-orange-700 mb-4 border-b border-orange-200 pb-2" dir="rtl">3
+                            جمل سحرية للميكاترونيك (Mechatronik)</h4>
                         <ul class="space-y-6 text-gray-700">
-                            <li class="bg-white p-4 rounded-lg shadow-sm border border-gray-100 relative group line-hover">
-                                <div class="font-bold text-gray-900 text-base mb-2 select-all pr-8">„Die Kombination aus Mechanik, Elektronik und Informatik fasziniert mich sehr und passt perfekt zu meinem handwerklichen Geschick.“</div>
-                                <div class="text-sm text-gray-500 font-cairo dir-rtl text-right mt-2 pt-2 border-t border-gray-100" dir="rtl">💡 <span class="text-orange-600 font-bold">للتقديم:</span> كتشرح فهمك للتخصص بلي هو مزيج وشغفك بيه.</div>
-                                <i class="fa-regular fa-copy absolute top-4 right-4 text-gray-300 group-hover:text-orange-500 cursor-pointer transition-colors text-lg" onclick="copyText(this)"></i>
+                            <li
+                                class="bg-white p-4 rounded-lg shadow-sm border border-gray-100 relative group line-hover">
+                                <div class="font-bold text-gray-900 text-base mb-2 select-all pr-8">„Die Kombination aus
+                                    Mechanik, Elektronik und Informatik fasziniert mich sehr und passt perfekt zu meinem
+                                    handwerklichen Geschick.“</div>
+                                <div class="text-sm text-gray-500 font-cairo dir-rtl text-right mt-2 pt-2 border-t border-gray-100"
+                                    dir="rtl">💡 <span class="text-orange-600 font-bold">للتقديم:</span> كتشرح فهمك
+                                    للتخصص بلي هو مزيج وشغفك بيه.</div>
+                                <i class="fa-regular fa-copy absolute top-4 right-4 text-gray-300 group-hover:text-orange-500 cursor-pointer transition-colors text-lg"
+                                    onclick="copyText(this)"></i>
                             </li>
-                            <li class="bg-white p-4 rounded-lg shadow-sm border border-gray-100 relative group line-hover">
-                                <div class="font-bold text-gray-900 text-base mb-2 select-all pr-8">„Ich zeichne mich durch eine sehr präzise, sorgfältige Arbeitsweise sowie ein hohes Sicherheitsbewusstsein aus.“</div>
-                                <div class="text-sm text-gray-500 font-cairo dir-rtl text-right mt-2 pt-2 border-t border-gray-100" dir="rtl">💡 <span class="text-orange-600 font-bold">لماذا أنت؟:</span> السلامة والأمان هما أهم شي فالماكينات في أوروبا.</div>
-                                <i class="fa-regular fa-copy absolute top-4 right-4 text-gray-300 group-hover:text-orange-500 cursor-pointer transition-colors text-lg" onclick="copyText(this)"></i>
+                            <li
+                                class="bg-white p-4 rounded-lg shadow-sm border border-gray-100 relative group line-hover">
+                                <div class="font-bold text-gray-900 text-base mb-2 select-all pr-8">„Ich zeichne mich
+                                    durch eine sehr präzise, sorgfältige Arbeitsweise sowie ein hohes
+                                    Sicherheitsbewusstsein aus.“</div>
+                                <div class="text-sm text-gray-500 font-cairo dir-rtl text-right mt-2 pt-2 border-t border-gray-100"
+                                    dir="rtl">💡 <span class="text-orange-600 font-bold">لماذا أنت؟:</span> السلامة
+                                    والأمان هما أهم شي فالماكينات في أوروبا.</div>
+                                <i class="fa-regular fa-copy absolute top-4 right-4 text-gray-300 group-hover:text-orange-500 cursor-pointer transition-colors text-lg"
+                                    onclick="copyText(this)"></i>
                             </li>
-                            <li class="bg-white p-4 rounded-lg shadow-sm border border-gray-100 relative group line-hover">
-                                <div class="font-bold text-gray-900 text-base mb-2 select-all pr-8">„Auf ein persönliches Gespräch mit Ihnen freue ich mich sehr.“</div>
-                                <div class="text-sm text-gray-500 font-cairo dir-rtl text-right mt-2 pt-2 border-t border-gray-100" dir="rtl">💡 <span class="text-orange-600 font-bold">الخاتمة:</span> بسيطة، احترافية وواضحة جدا.</div>
-                                <i class="fa-regular fa-copy absolute top-4 right-4 text-gray-300 group-hover:text-orange-500 cursor-pointer transition-colors text-lg" onclick="copyText(this)"></i>
+                            <li
+                                class="bg-white p-4 rounded-lg shadow-sm border border-gray-100 relative group line-hover">
+                                <div class="font-bold text-gray-900 text-base mb-2 select-all pr-8">„Auf ein
+                                    persönliches Gespräch mit Ihnen freue ich mich sehr.“</div>
+                                <div class="text-sm text-gray-500 font-cairo dir-rtl text-right mt-2 pt-2 border-t border-gray-100"
+                                    dir="rtl">💡 <span class="text-orange-600 font-bold">الخاتمة:</span> بسيطة، احترافية
+                                    وواضحة جدا.</div>
+                                <i class="fa-regular fa-copy absolute top-4 right-4 text-gray-300 group-hover:text-orange-500 cursor-pointer transition-colors text-lg"
+                                    onclick="copyText(this)"></i>
                             </li>
                         </ul>
                     </div>
                     <!-- Tab Logistics -->
                     <div id="tab-log" class="tab-content">
-                        <h4 class="text-xl font-black text-cyan-700 mb-4 border-b border-cyan-200 pb-2" dir="rtl">3 جمل سحرية للوجستيك (Lagerlogistik)</h4>
+                        <h4 class="text-xl font-black text-cyan-700 mb-4 border-b border-cyan-200 pb-2" dir="rtl">3 جمل
+                            سحرية للوجستيك (Lagerlogistik)</h4>
                         <ul class="space-y-6 text-gray-700">
-                            <li class="bg-white p-4 rounded-lg shadow-sm border border-gray-100 relative group line-hover">
-                                <div class="font-bold text-gray-900 text-base mb-2 select-all pr-8">„Die genaue Organisation von Abläufen und der Umgang mit Waren bereiten mir große Freude.“</div>
-                                <div class="text-sm text-gray-500 font-cairo dir-rtl text-right mt-2 pt-2 border-t border-gray-100" dir="rtl">💡 <span class="text-cyan-600 font-bold">للتقديم:</span> بين بلي كتهمك الدقة فتنظيم السلعة.</div>
-                                <i class="fa-regular fa-copy absolute top-4 right-4 text-gray-300 group-hover:text-cyan-500 cursor-pointer transition-colors text-lg" onclick="copyText(this)"></i>
+                            <li
+                                class="bg-white p-4 rounded-lg shadow-sm border border-gray-100 relative group line-hover">
+                                <div class="font-bold text-gray-900 text-base mb-2 select-all pr-8">„Die genaue
+                                    Organisation von Abläufen und der Umgang mit Waren bereiten mir große Freude.“</div>
+                                <div class="text-sm text-gray-500 font-cairo dir-rtl text-right mt-2 pt-2 border-t border-gray-100"
+                                    dir="rtl">💡 <span class="text-cyan-600 font-bold">للتقديم:</span> بين بلي كتهمك
+                                    الدقة فتنظيم السلعة.</div>
+                                <i class="fa-regular fa-copy absolute top-4 right-4 text-gray-300 group-hover:text-cyan-500 cursor-pointer transition-colors text-lg"
+                                    onclick="copyText(this)"></i>
                             </li>
-                            <li class="bg-white p-4 rounded-lg shadow-sm border border-gray-100 relative group line-hover">
-                                <div class="font-bold text-gray-900 text-base mb-2 select-all pr-8">„Körperliche Belastbarkeit, Ausdauer und absolute Pünktlichkeit sind für mich selbstverständlich.“</div>
-                                <div class="text-sm text-gray-500 font-cairo dir-rtl text-right mt-2 pt-2 border-t border-gray-100" dir="rtl">💡 <span class="text-cyan-600 font-bold">لماذا أنت؟:</span> اللياقة، الصبر والالتزام بالوقت. أهم كلمات.</div>
-                                <i class="fa-regular fa-copy absolute top-4 right-4 text-gray-300 group-hover:text-cyan-500 cursor-pointer transition-colors text-lg" onclick="copyText(this)"></i>
+                            <li
+                                class="bg-white p-4 rounded-lg shadow-sm border border-gray-100 relative group line-hover">
+                                <div class="font-bold text-gray-900 text-base mb-2 select-all pr-8">„Körperliche
+                                    Belastbarkeit, Ausdauer und absolute Pünktlichkeit sind für mich
+                                    selbstverständlich.“</div>
+                                <div class="text-sm text-gray-500 font-cairo dir-rtl text-right mt-2 pt-2 border-t border-gray-100"
+                                    dir="rtl">💡 <span class="text-cyan-600 font-bold">لماذا أنت؟:</span> اللياقة، الصبر
+                                    والالتزام بالوقت. أهم كلمات.</div>
+                                <i class="fa-regular fa-copy absolute top-4 right-4 text-gray-300 group-hover:text-cyan-500 cursor-pointer transition-colors text-lg"
+                                    onclick="copyText(this)"></i>
                             </li>
-                            <li class="bg-white p-4 rounded-lg shadow-sm border border-gray-100 relative group line-hover">
-                                <div class="font-bold text-gray-900 text-base mb-2 select-all pr-8">„Da ich körperliche Arbeit gewohnt bin, sehe ich den Aufgaben im Lager motiviert entgegen.“</div>
-                                <div class="text-sm text-gray-500 font-cairo dir-rtl text-right mt-2 pt-2 border-t border-gray-100" dir="rtl">💡 <span class="text-cyan-600 font-bold">إضافة ممتازة:</span> كيتأكدو بلي الخدمة البدنية المجهدة ماشي مشكل ليك.</div>
-                                <i class="fa-regular fa-copy absolute top-4 right-4 text-gray-300 group-hover:text-cyan-500 cursor-pointer transition-colors text-lg" onclick="copyText(this)"></i>
+                            <li
+                                class="bg-white p-4 rounded-lg shadow-sm border border-gray-100 relative group line-hover">
+                                <div class="font-bold text-gray-900 text-base mb-2 select-all pr-8">„Da ich körperliche
+                                    Arbeit gewohnt bin, sehe ich den Aufgaben im Lager motiviert entgegen.“</div>
+                                <div class="text-sm text-gray-500 font-cairo dir-rtl text-right mt-2 pt-2 border-t border-gray-100"
+                                    dir="rtl">💡 <span class="text-cyan-600 font-bold">إضافة ممتازة:</span> كيتأكدو بلي
+                                    الخدمة البدنية المجهدة ماشي مشكل ليك.</div>
+                                <i class="fa-regular fa-copy absolute top-4 right-4 text-gray-300 group-hover:text-cyan-500 cursor-pointer transition-colors text-lg"
+                                    onclick="copyText(this)"></i>
                             </li>
                         </ul>
                     </div>
                     <!-- Tab Gastro -->
                     <div id="tab-gastro" class="tab-content">
-                        <h4 class="text-xl font-black text-rose-700 mb-4 border-b border-rose-200 pb-2" dir="rtl">3 جمل سحرية للفندقة والطبخ (Gastronomie)</h4>
+                        <h4 class="text-xl font-black text-rose-700 mb-4 border-b border-rose-200 pb-2" dir="rtl">3 جمل
+                            سحرية للفندقة والطبخ (Gastronomie)</h4>
                         <ul class="space-y-6 text-gray-700">
-                            <li class="bg-white p-4 rounded-lg shadow-sm border border-gray-100 relative group line-hover">
-                                <div class="font-bold text-gray-900 text-base mb-2 select-all pr-8">„Es motiviert mich, Gästen einen hervorragenden Service zu bieten und für ihr Wohlbefinden zu sorgen.“</div>
-                                <div class="text-sm text-gray-500 font-cairo dir-rtl text-right mt-2 pt-2 border-t border-gray-100" dir="rtl">💡 <span class="text-rose-600 font-bold">للتقديم:</span> بين شغفك بخدمة الزبناء، هادشي لي كيقلب عليه أي فندق.</div>
-                                <i class="fa-regular fa-copy absolute top-4 right-4 text-gray-300 group-hover:text-rose-500 cursor-pointer transition-colors text-lg" onclick="copyText(this)"></i>
+                            <li
+                                class="bg-white p-4 rounded-lg shadow-sm border border-gray-100 relative group line-hover">
+                                <div class="font-bold text-gray-900 text-base mb-2 select-all pr-8">„Es motiviert mich,
+                                    Gästen einen hervorragenden Service zu bieten und für ihr Wohlbefinden zu sorgen.“
+                                </div>
+                                <div class="text-sm text-gray-500 font-cairo dir-rtl text-right mt-2 pt-2 border-t border-gray-100"
+                                    dir="rtl">💡 <span class="text-rose-600 font-bold">للتقديم:</span> بين شغفك بخدمة
+                                    الزبناء، هادشي لي كيقلب عليه أي فندق.</div>
+                                <i class="fa-regular fa-copy absolute top-4 right-4 text-gray-300 group-hover:text-rose-500 cursor-pointer transition-colors text-lg"
+                                    onclick="copyText(this)"></i>
                             </li>
-                            <li class="bg-white p-4 rounded-lg shadow-sm border border-gray-100 relative group line-hover">
-                                <div class="font-bold text-gray-900 text-base mb-2 select-all pr-8">„Ein freundliches Auftreten und absolute Serviceorientierung – auch an Wochenenden – zeichnen mich aus.“</div>
-                                <div class="text-sm text-gray-500 font-cairo dir-rtl text-right mt-2 pt-2 border-t border-gray-100" dir="rtl">💡 <span class="text-rose-600 font-bold">لماذا أنت؟:</span> الابتسامة ومستعد تخدم نهار السبت والأحد (لي هو عادي فالفندقة).</div>
-                                <i class="fa-regular fa-copy absolute top-4 right-4 text-gray-300 group-hover:text-rose-500 cursor-pointer transition-colors text-lg" onclick="copyText(this)"></i>
+                            <li
+                                class="bg-white p-4 rounded-lg shadow-sm border border-gray-100 relative group line-hover">
+                                <div class="font-bold text-gray-900 text-base mb-2 select-all pr-8">„Ein freundliches
+                                    Auftreten und absolute Serviceorientierung – auch an Wochenenden – zeichnen mich
+                                    aus.“</div>
+                                <div class="text-sm text-gray-500 font-cairo dir-rtl text-right mt-2 pt-2 border-t border-gray-100"
+                                    dir="rtl">💡 <span class="text-rose-600 font-bold">لماذا أنت؟:</span> الابتسامة
+                                    ومستعد تخدم نهار السبت والأحد (لي هو عادي فالفندقة).</div>
+                                <i class="fa-regular fa-copy absolute top-4 right-4 text-gray-300 group-hover:text-rose-500 cursor-pointer transition-colors text-lg"
+                                    onclick="copyText(this)"></i>
                             </li>
-                            <li class="bg-white p-4 rounded-lg shadow-sm border border-gray-100 relative group line-hover">
-                                <div class="font-bold text-gray-900 text-base mb-2 select-all pr-8">„Ich freue mich über die Einladung zu einem Vorstellungsgespräch oder einem Probetag.“</div>
-                                <div class="text-sm text-gray-500 font-cairo dir-rtl text-right mt-2 pt-2 border-t border-gray-100" dir="rtl">💡 <span class="text-rose-600 font-bold">الخاتمة:</span> تطلب أنك دير يوم تجريبي (Probetag)، لي هادي فكرة متميزة.</div>
-                                <i class="fa-regular fa-copy absolute top-4 right-4 text-gray-300 group-hover:text-rose-500 cursor-pointer transition-colors text-lg" onclick="copyText(this)"></i>
+                            <li
+                                class="bg-white p-4 rounded-lg shadow-sm border border-gray-100 relative group line-hover">
+                                <div class="font-bold text-gray-900 text-base mb-2 select-all pr-8">„Ich freue mich über
+                                    die Einladung zu einem Vorstellungsgespräch oder einem Probetag.“</div>
+                                <div class="text-sm text-gray-500 font-cairo dir-rtl text-right mt-2 pt-2 border-t border-gray-100"
+                                    dir="rtl">💡 <span class="text-rose-600 font-bold">الخاتمة:</span> تطلب أنك دير يوم
+                                    تجريبي (Probetag)، لي هادي فكرة متميزة.</div>
+                                <i class="fa-regular fa-copy absolute top-4 right-4 text-gray-300 group-hover:text-rose-500 cursor-pointer transition-colors text-lg"
+                                    onclick="copyText(this)"></i>
                             </li>
                         </ul>
                     </div>
@@ -593,980 +739,1904 @@
             <!-- 4. The 20 Interview Master-Guide -->
             <div class="bg-white rounded-3xl p-8 shadow-sm border border-gray-200">
                 <h3 class="text-2xl md:text-3xl font-black text-gerBlack mb-2 text-right">دليل المقابلة الذهبي 🎤</h3>
-                <p class="text-gray-600 font-semibold mb-8 text-right">أهم الأسئلة التي تطرح في المقابلات، منظمة كحوار مباشر مع تلميحات بالدارجة.</p>
-                
+                <p class="text-gray-600 font-semibold mb-8 text-right">أهم الأسئلة التي تطرح في المقابلات، منظمة كحوار
+                    مباشر مع تلميحات بالدارجة.</p>
+
                 <div class="space-y-4 flex flex-col font-inter" dir="ltr">
 
-                    <div class="bg-gray-50 rounded-xl p-5 border border-gray-100 shadow-sm relative overflow-hidden group">
-                        <div class="absolute top-0 right-0 w-8 h-8 bg-gerRed text-white flex items-center justify-center font-black rounded-bl-lg">Q1</div>
-                        <h4 class="text-xl font-bold text-gray-900 mb-3 ml-2 mt-1 dir-ltr font-inter select-all pr-8" dir="ltr">Erzählen Sie uns etwas über sich.</h4>
-                        <div class="border-l-4 border-green-500 pl-4 py-2 bg-white rounded-r-lg shadow-sm mb-3 ml-2 font-inter text-gray-800 font-medium select-all" dir="ltr">
-                            Ich heiße [Name], bin [Alter] Jahre alt und komme aus Marokko. Ich habe mein Abitur gemacht und interessiere mich sehr für [Fachbereich].
+                    <div
+                        class="bg-gray-50 rounded-xl p-5 border border-gray-100 shadow-sm relative overflow-hidden group">
+                        <div
+                            class="absolute top-0 right-0 w-8 h-8 bg-gerRed text-white flex items-center justify-center font-black rounded-bl-lg">
+                            Q1</div>
+                        <h4 class="text-xl font-bold text-gray-900 mb-3 ml-2 mt-1 dir-ltr font-inter select-all pr-8"
+                            dir="ltr">Erzählen Sie uns etwas über sich.</h4>
+                        <div class="border-l-4 border-green-500 pl-4 py-2 bg-white rounded-r-lg shadow-sm mb-3 ml-2 font-inter text-gray-800 font-medium select-all"
+                            dir="ltr">
+                            Ich heiße [Name], bin [Alter] Jahre alt und komme aus Marokko. Ich habe mein Abitur gemacht
+                            und interessiere mich sehr für [Fachbereich].
                         </div>
-                        <div class="text-sm font-semibold dir-rtl text-right text-gray-600 bg-blue-50 p-2 rounded border border-blue-100" dir="rtl">
-                            <span class="text-gerGold"><i class="fa-solid fa-lightbulb"></i></span> <span class="bg-blue-600 text-white px-2 py-0.5 rounded text-xs ml-1">تلميحة</span> إجابة كلاسيكية: اذكر اسمك، بلدك، وماذا درست ولماذا أنت مهتم أبدع فيها.
-                        </div>
-                    </div>
-                    <div class="bg-gray-50 rounded-xl p-5 border border-gray-100 shadow-sm relative overflow-hidden group">
-                        <div class="absolute top-0 right-0 w-8 h-8 bg-gerRed text-white flex items-center justify-center font-black rounded-bl-lg">Q2</div>
-                        <h4 class="text-xl font-bold text-gray-900 mb-3 ml-2 mt-1 dir-ltr font-inter select-all pr-8" dir="ltr">Warum möchten Sie eine Ausbildung in Deutschland machen?</h4>
-                        <div class="border-l-4 border-green-500 pl-4 py-2 bg-white rounded-r-lg shadow-sm mb-3 ml-2 font-inter text-gray-800 font-medium select-all" dir="ltr">
-                            Das deutsche duale System ist weltweit anerkannt. Ich möchte Theorie und Praxis direkt verbinden und meine berufliche Zukunft auf ein solides Fundament stellen.
-                        </div>
-                        <div class="text-sm font-semibold dir-rtl text-right text-gray-600 bg-blue-50 p-2 rounded border border-blue-100" dir="rtl">
-                            <span class="text-gerGold"><i class="fa-solid fa-lightbulb"></i></span> <span class="bg-blue-600 text-white px-2 py-0.5 rounded text-xs ml-1">تلميحة</span> ركز على جودة 'التكوين المزدوج' وليس على رغبتك المادية في أوروبا.
-                        </div>
-                    </div>
-                    <div class="bg-gray-50 rounded-xl p-5 border border-gray-100 shadow-sm relative overflow-hidden group">
-                        <div class="absolute top-0 right-0 w-8 h-8 bg-gerRed text-white flex items-center justify-center font-black rounded-bl-lg">Q3</div>
-                        <h4 class="text-xl font-bold text-gray-900 mb-3 ml-2 mt-1 dir-ltr font-inter select-all pr-8" dir="ltr">Warum haben Sie sich bei unserem Unternehmen beworben?</h4>
-                        <div class="border-l-4 border-green-500 pl-4 py-2 bg-white rounded-r-lg shadow-sm mb-3 ml-2 font-inter text-gray-800 font-medium select-all" dir="ltr">
-                            Ihr Unternehmen hat einen sehr guten Ruf in der Branche. Bei meiner Recherche hat mir besonders [Projekt/Wert] gefallen.
-                        </div>
-                        <div class="text-sm font-semibold dir-rtl text-right text-gray-600 bg-blue-50 p-2 rounded border border-blue-100" dir="rtl">
-                            <span class="text-gerGold"><i class="fa-solid fa-lightbulb"></i></span> <span class="bg-blue-600 text-white px-2 py-0.5 rounded text-xs ml-1">تلميحة</span> اثبت أنك قمت ببحث عن شركتهم (ذكر مشروع أو قيمة للشركة).
+                        <div class="text-sm font-semibold dir-rtl text-right text-gray-600 bg-blue-50 p-2 rounded border border-blue-100"
+                            dir="rtl">
+                            <span class="text-gerGold"><i class="fa-solid fa-lightbulb"></i></span> <span
+                                class="bg-blue-600 text-white px-2 py-0.5 rounded text-xs ml-1">تلميحة</span> إجابة
+                            كلاسيكية: اذكر اسمك، بلدك، وماذا درست ولماذا أنت مهتم أبدع فيها.
                         </div>
                     </div>
-                    <div class="bg-gray-50 rounded-xl p-5 border border-gray-100 shadow-sm relative overflow-hidden group">
-                        <div class="absolute top-0 right-0 w-8 h-8 bg-gerRed text-white flex items-center justify-center font-black rounded-bl-lg">Q4</div>
-                        <h4 class="text-xl font-bold text-gray-900 mb-3 ml-2 mt-1 dir-ltr font-inter select-all pr-8" dir="ltr">Was sind Ihre größten Stärken?</h4>
-                        <div class="border-l-4 border-green-500 pl-4 py-2 bg-white rounded-r-lg shadow-sm mb-3 ml-2 font-inter text-gray-800 font-medium select-all" dir="ltr">
-                            Ich bin sehr zuverlässig, lerne schnell und kann mich gut in ein Team integrieren. Außerdem bringe ich viel Motivation mit.
+                    <div
+                        class="bg-gray-50 rounded-xl p-5 border border-gray-100 shadow-sm relative overflow-hidden group">
+                        <div
+                            class="absolute top-0 right-0 w-8 h-8 bg-gerRed text-white flex items-center justify-center font-black rounded-bl-lg">
+                            Q2</div>
+                        <h4 class="text-xl font-bold text-gray-900 mb-3 ml-2 mt-1 dir-ltr font-inter select-all pr-8"
+                            dir="ltr">Warum möchten Sie eine Ausbildung in Deutschland machen?</h4>
+                        <div class="border-l-4 border-green-500 pl-4 py-2 bg-white rounded-r-lg shadow-sm mb-3 ml-2 font-inter text-gray-800 font-medium select-all"
+                            dir="ltr">
+                            Das deutsche duale System ist weltweit anerkannt. Ich möchte Theorie und Praxis direkt
+                            verbinden und meine berufliche Zukunft auf ein solides Fundament stellen.
                         </div>
-                        <div class="text-sm font-semibold dir-rtl text-right text-gray-600 bg-blue-50 p-2 rounded border border-blue-100" dir="rtl">
-                            <span class="text-gerGold"><i class="fa-solid fa-lightbulb"></i></span> <span class="bg-blue-600 text-white px-2 py-0.5 rounded text-xs ml-1">تلميحة</span> اختر نقاط قوة واقعية: الموثوقية، سرعة التعلم، والعمل الجماعي.
-                        </div>
-                    </div>
-                    <div class="bg-gray-50 rounded-xl p-5 border border-gray-100 shadow-sm relative overflow-hidden group">
-                        <div class="absolute top-0 right-0 w-8 h-8 bg-gerRed text-white flex items-center justify-center font-black rounded-bl-lg">Q5</div>
-                        <h4 class="text-xl font-bold text-gray-900 mb-3 ml-2 mt-1 dir-ltr font-inter select-all pr-8" dir="ltr">Was ist Ihre größte Schwäche?</h4>
-                        <div class="border-l-4 border-green-500 pl-4 py-2 bg-white rounded-r-lg shadow-sm mb-3 ml-2 font-inter text-gray-800 font-medium select-all" dir="ltr">
-                            Manchmal bin ich etwas ungeduldig, wenn Aufgaben nicht schnell vorangehen. Aber ich habe gelernt, mich besser zu strukturieren.
-                        </div>
-                        <div class="text-sm font-semibold dir-rtl text-right text-gray-600 bg-blue-50 p-2 rounded border border-blue-100" dir="rtl">
-                            <span class="text-gerGold"><i class="fa-solid fa-lightbulb"></i></span> <span class="bg-blue-600 text-white px-2 py-0.5 rounded text-xs ml-1">تلميحة</span> تجنب المثالية، اذكر ضعفاً واقعياً مثل قلة الصبر وكيف تحسنه.
-                        </div>
-                    </div>
-                    <div class="bg-gray-50 rounded-xl p-5 border border-gray-100 shadow-sm relative overflow-hidden group">
-                        <div class="absolute top-0 right-0 w-8 h-8 bg-gerRed text-white flex items-center justify-center font-black rounded-bl-lg">Q6</div>
-                        <h4 class="text-xl font-bold text-gray-900 mb-3 ml-2 mt-1 dir-ltr font-inter select-all pr-8" dir="ltr">Wo sehen Sie sich in 3 bis 5 Jahren?</h4>
-                        <div class="border-l-4 border-green-500 pl-4 py-2 bg-white rounded-r-lg shadow-sm mb-3 ml-2 font-inter text-gray-800 font-medium select-all" dir="ltr">
-                            Ich sehe mich als erfolgreich abgeschlossene Fachkraft in Ihrem Unternehmen, bereit, mehr Verantwortung zu übernehmen.
-                        </div>
-                        <div class="text-sm font-semibold dir-rtl text-right text-gray-600 bg-blue-50 p-2 rounded border border-blue-100" dir="rtl">
-                            <span class="text-gerGold"><i class="fa-solid fa-lightbulb"></i></span> <span class="bg-blue-600 text-white px-2 py-0.5 rounded text-xs ml-1">تلميحة</span> يسألون عن الاستقرار، أخبرهم أنك تطمح لإكمال التدريب والبقاء معهم.
+                        <div class="text-sm font-semibold dir-rtl text-right text-gray-600 bg-blue-50 p-2 rounded border border-blue-100"
+                            dir="rtl">
+                            <span class="text-gerGold"><i class="fa-solid fa-lightbulb"></i></span> <span
+                                class="bg-blue-600 text-white px-2 py-0.5 rounded text-xs ml-1">تلميحة</span> ركز على
+                            جودة 'التكوين المزدوج' وليس على رغبتك المادية في أوروبا.
                         </div>
                     </div>
-                    <div class="bg-gray-50 rounded-xl p-5 border border-gray-100 shadow-sm relative overflow-hidden group">
-                        <div class="absolute top-0 right-0 w-8 h-8 bg-gerRed text-white flex items-center justify-center font-black rounded-bl-lg">Q7</div>
-                        <h4 class="text-xl font-bold text-gray-900 mb-3 ml-2 mt-1 dir-ltr font-inter select-all pr-8" dir="ltr">Wie gehen Sie mit Kritik um?</h4>
-                        <div class="border-l-4 border-green-500 pl-4 py-2 bg-white rounded-r-lg shadow-sm mb-3 ml-2 font-inter text-gray-800 font-medium select-all" dir="ltr">
-                            Kritik sehe ich als Chance, mich zu verbessern. Ich höre gut zu und versuche, die Fehler beim nächsten Mal zu vermeiden.
+                    <div
+                        class="bg-gray-50 rounded-xl p-5 border border-gray-100 shadow-sm relative overflow-hidden group">
+                        <div
+                            class="absolute top-0 right-0 w-8 h-8 bg-gerRed text-white flex items-center justify-center font-black rounded-bl-lg">
+                            Q3</div>
+                        <h4 class="text-xl font-bold text-gray-900 mb-3 ml-2 mt-1 dir-ltr font-inter select-all pr-8"
+                            dir="ltr">Warum haben Sie sich bei unserem Unternehmen beworben?</h4>
+                        <div class="border-l-4 border-green-500 pl-4 py-2 bg-white rounded-r-lg shadow-sm mb-3 ml-2 font-inter text-gray-800 font-medium select-all"
+                            dir="ltr">
+                            Ihr Unternehmen hat einen sehr guten Ruf in der Branche. Bei meiner Recherche hat mir
+                            besonders [Projekt/Wert] gefallen.
                         </div>
-                        <div class="text-sm font-semibold dir-rtl text-right text-gray-600 bg-blue-50 p-2 rounded border border-blue-100" dir="rtl">
-                            <span class="text-gerGold"><i class="fa-solid fa-lightbulb"></i></span> <span class="bg-blue-600 text-white px-2 py-0.5 rounded text-xs ml-1">تلميحة</span> النقد البناء في ألمانيا مهم، أظهر أنك تتقبله كفرصة للتعلم بصدر رحب.
-                        </div>
-                    </div>
-                    <div class="bg-gray-50 rounded-xl p-5 border border-gray-100 shadow-sm relative overflow-hidden group">
-                        <div class="absolute top-0 right-0 w-8 h-8 bg-gerRed text-white flex items-center justify-center font-black rounded-bl-lg">Q8</div>
-                        <h4 class="text-xl font-bold text-gray-900 mb-3 ml-2 mt-1 dir-ltr font-inter select-all pr-8" dir="ltr">Wie reagieren Sie auf Stresssituationen?</h4>
-                        <div class="border-l-4 border-green-500 pl-4 py-2 bg-white rounded-r-lg shadow-sm mb-3 ml-2 font-inter text-gray-800 font-medium select-all" dir="ltr">
-                            In stressigen Situationen bleibe ich ruhig. Ich priorisiere meine Aufgaben und arbeite sie Schritt für Schritt ab.
-                        </div>
-                        <div class="text-sm font-semibold dir-rtl text-right text-gray-600 bg-blue-50 p-2 rounded border border-blue-100" dir="rtl">
-                            <span class="text-gerGold"><i class="fa-solid fa-lightbulb"></i></span> <span class="bg-blue-600 text-white px-2 py-0.5 rounded text-xs ml-1">تلميحة</span> التنظيم هو مفتاح الإجابة، حافظ على هدوئك ونظم مهامك.
-                        </div>
-                    </div>
-                    <div class="bg-gray-50 rounded-xl p-5 border border-gray-100 shadow-sm relative overflow-hidden group">
-                        <div class="absolute top-0 right-0 w-8 h-8 bg-gerRed text-white flex items-center justify-center font-black rounded-bl-lg">Q9</div>
-                        <h4 class="text-xl font-bold text-gray-900 mb-3 ml-2 mt-1 dir-ltr font-inter select-all pr-8" dir="ltr">Arbeiten Sie lieber im Team oder alleine?</h4>
-                        <div class="border-l-4 border-green-500 pl-4 py-2 bg-white rounded-r-lg shadow-sm mb-3 ml-2 font-inter text-gray-800 font-medium select-all" dir="ltr">
-                            Ich arbeite sehr gerne im Team, da man sich gegenseitig beeinflussen kann. Ich kann aber auch Aufgaben selbstständig erledigen.
-                        </div>
-                        <div class="text-sm font-semibold dir-rtl text-right text-gray-600 bg-blue-50 p-2 rounded border border-blue-100" dir="rtl">
-                            <span class="text-gerGold"><i class="fa-solid fa-lightbulb"></i></span> <span class="bg-blue-600 text-white px-2 py-0.5 rounded text-xs ml-1">تلميحة</span> إجابة متوازنة: تفضل العمل الجماعي لكنك قادر على العمل مستقلا.
+                        <div class="text-sm font-semibold dir-rtl text-right text-gray-600 bg-blue-50 p-2 rounded border border-blue-100"
+                            dir="rtl">
+                            <span class="text-gerGold"><i class="fa-solid fa-lightbulb"></i></span> <span
+                                class="bg-blue-600 text-white px-2 py-0.5 rounded text-xs ml-1">تلميحة</span> اثبت أنك
+                            قمت ببحث عن شركتهم (ذكر مشروع أو قيمة للشركة).
                         </div>
                     </div>
-                    <div class="bg-gray-50 rounded-xl p-5 border border-gray-100 shadow-sm relative overflow-hidden group">
-                        <div class="absolute top-0 right-0 w-8 h-8 bg-gerRed text-white flex items-center justify-center font-black rounded-bl-lg">Q10</div>
-                        <h4 class="text-xl font-bold text-gray-900 mb-3 ml-2 mt-1 dir-ltr font-inter select-all pr-8" dir="ltr">Haben Sie noch Fragen an uns?</h4>
-                        <div class="border-l-4 border-green-500 pl-4 py-2 bg-white rounded-r-lg shadow-sm mb-3 ml-2 font-inter text-gray-800 font-medium select-all" dir="ltr">
+                    <div
+                        class="bg-gray-50 rounded-xl p-5 border border-gray-100 shadow-sm relative overflow-hidden group">
+                        <div
+                            class="absolute top-0 right-0 w-8 h-8 bg-gerRed text-white flex items-center justify-center font-black rounded-bl-lg">
+                            Q4</div>
+                        <h4 class="text-xl font-bold text-gray-900 mb-3 ml-2 mt-1 dir-ltr font-inter select-all pr-8"
+                            dir="ltr">Was sind Ihre größten Stärken?</h4>
+                        <div class="border-l-4 border-green-500 pl-4 py-2 bg-white rounded-r-lg shadow-sm mb-3 ml-2 font-inter text-gray-800 font-medium select-all"
+                            dir="ltr">
+                            Ich bin sehr zuverlässig, lerne schnell und kann mich gut in ein Team integrieren. Außerdem
+                            bringe ich viel Motivation mit.
+                        </div>
+                        <div class="text-sm font-semibold dir-rtl text-right text-gray-600 bg-blue-50 p-2 rounded border border-blue-100"
+                            dir="rtl">
+                            <span class="text-gerGold"><i class="fa-solid fa-lightbulb"></i></span> <span
+                                class="bg-blue-600 text-white px-2 py-0.5 rounded text-xs ml-1">تلميحة</span> اختر نقاط
+                            قوة واقعية: الموثوقية، سرعة التعلم، والعمل الجماعي.
+                        </div>
+                    </div>
+                    <div
+                        class="bg-gray-50 rounded-xl p-5 border border-gray-100 shadow-sm relative overflow-hidden group">
+                        <div
+                            class="absolute top-0 right-0 w-8 h-8 bg-gerRed text-white flex items-center justify-center font-black rounded-bl-lg">
+                            Q5</div>
+                        <h4 class="text-xl font-bold text-gray-900 mb-3 ml-2 mt-1 dir-ltr font-inter select-all pr-8"
+                            dir="ltr">Was ist Ihre größte Schwäche?</h4>
+                        <div class="border-l-4 border-green-500 pl-4 py-2 bg-white rounded-r-lg shadow-sm mb-3 ml-2 font-inter text-gray-800 font-medium select-all"
+                            dir="ltr">
+                            Manchmal bin ich etwas ungeduldig, wenn Aufgaben nicht schnell vorangehen. Aber ich habe
+                            gelernt, mich besser zu strukturieren.
+                        </div>
+                        <div class="text-sm font-semibold dir-rtl text-right text-gray-600 bg-blue-50 p-2 rounded border border-blue-100"
+                            dir="rtl">
+                            <span class="text-gerGold"><i class="fa-solid fa-lightbulb"></i></span> <span
+                                class="bg-blue-600 text-white px-2 py-0.5 rounded text-xs ml-1">تلميحة</span> تجنب
+                            المثالية، اذكر ضعفاً واقعياً مثل قلة الصبر وكيف تحسنه.
+                        </div>
+                    </div>
+                    <div
+                        class="bg-gray-50 rounded-xl p-5 border border-gray-100 shadow-sm relative overflow-hidden group">
+                        <div
+                            class="absolute top-0 right-0 w-8 h-8 bg-gerRed text-white flex items-center justify-center font-black rounded-bl-lg">
+                            Q6</div>
+                        <h4 class="text-xl font-bold text-gray-900 mb-3 ml-2 mt-1 dir-ltr font-inter select-all pr-8"
+                            dir="ltr">Wo sehen Sie sich in 3 bis 5 Jahren?</h4>
+                        <div class="border-l-4 border-green-500 pl-4 py-2 bg-white rounded-r-lg shadow-sm mb-3 ml-2 font-inter text-gray-800 font-medium select-all"
+                            dir="ltr">
+                            Ich sehe mich als erfolgreich abgeschlossene Fachkraft in Ihrem Unternehmen, bereit, mehr
+                            Verantwortung zu übernehmen.
+                        </div>
+                        <div class="text-sm font-semibold dir-rtl text-right text-gray-600 bg-blue-50 p-2 rounded border border-blue-100"
+                            dir="rtl">
+                            <span class="text-gerGold"><i class="fa-solid fa-lightbulb"></i></span> <span
+                                class="bg-blue-600 text-white px-2 py-0.5 rounded text-xs ml-1">تلميحة</span> يسألون عن
+                            الاستقرار، أخبرهم أنك تطمح لإكمال التدريب والبقاء معهم.
+                        </div>
+                    </div>
+                    <div
+                        class="bg-gray-50 rounded-xl p-5 border border-gray-100 shadow-sm relative overflow-hidden group">
+                        <div
+                            class="absolute top-0 right-0 w-8 h-8 bg-gerRed text-white flex items-center justify-center font-black rounded-bl-lg">
+                            Q7</div>
+                        <h4 class="text-xl font-bold text-gray-900 mb-3 ml-2 mt-1 dir-ltr font-inter select-all pr-8"
+                            dir="ltr">Wie gehen Sie mit Kritik um?</h4>
+                        <div class="border-l-4 border-green-500 pl-4 py-2 bg-white rounded-r-lg shadow-sm mb-3 ml-2 font-inter text-gray-800 font-medium select-all"
+                            dir="ltr">
+                            Kritik sehe ich als Chance, mich zu verbessern. Ich höre gut zu und versuche, die Fehler
+                            beim nächsten Mal zu vermeiden.
+                        </div>
+                        <div class="text-sm font-semibold dir-rtl text-right text-gray-600 bg-blue-50 p-2 rounded border border-blue-100"
+                            dir="rtl">
+                            <span class="text-gerGold"><i class="fa-solid fa-lightbulb"></i></span> <span
+                                class="bg-blue-600 text-white px-2 py-0.5 rounded text-xs ml-1">تلميحة</span> النقد
+                            البناء في ألمانيا مهم، أظهر أنك تتقبله كفرصة للتعلم بصدر رحب.
+                        </div>
+                    </div>
+                    <div
+                        class="bg-gray-50 rounded-xl p-5 border border-gray-100 shadow-sm relative overflow-hidden group">
+                        <div
+                            class="absolute top-0 right-0 w-8 h-8 bg-gerRed text-white flex items-center justify-center font-black rounded-bl-lg">
+                            Q8</div>
+                        <h4 class="text-xl font-bold text-gray-900 mb-3 ml-2 mt-1 dir-ltr font-inter select-all pr-8"
+                            dir="ltr">Wie reagieren Sie auf Stresssituationen?</h4>
+                        <div class="border-l-4 border-green-500 pl-4 py-2 bg-white rounded-r-lg shadow-sm mb-3 ml-2 font-inter text-gray-800 font-medium select-all"
+                            dir="ltr">
+                            In stressigen Situationen bleibe ich ruhig. Ich priorisiere meine Aufgaben und arbeite sie
+                            Schritt für Schritt ab.
+                        </div>
+                        <div class="text-sm font-semibold dir-rtl text-right text-gray-600 bg-blue-50 p-2 rounded border border-blue-100"
+                            dir="rtl">
+                            <span class="text-gerGold"><i class="fa-solid fa-lightbulb"></i></span> <span
+                                class="bg-blue-600 text-white px-2 py-0.5 rounded text-xs ml-1">تلميحة</span> التنظيم هو
+                            مفتاح الإجابة، حافظ على هدوئك ونظم مهامك.
+                        </div>
+                    </div>
+                    <div
+                        class="bg-gray-50 rounded-xl p-5 border border-gray-100 shadow-sm relative overflow-hidden group">
+                        <div
+                            class="absolute top-0 right-0 w-8 h-8 bg-gerRed text-white flex items-center justify-center font-black rounded-bl-lg">
+                            Q9</div>
+                        <h4 class="text-xl font-bold text-gray-900 mb-3 ml-2 mt-1 dir-ltr font-inter select-all pr-8"
+                            dir="ltr">Arbeiten Sie lieber im Team oder alleine?</h4>
+                        <div class="border-l-4 border-green-500 pl-4 py-2 bg-white rounded-r-lg shadow-sm mb-3 ml-2 font-inter text-gray-800 font-medium select-all"
+                            dir="ltr">
+                            Ich arbeite sehr gerne im Team, da man sich gegenseitig beeinflussen kann. Ich kann aber
+                            auch Aufgaben selbstständig erledigen.
+                        </div>
+                        <div class="text-sm font-semibold dir-rtl text-right text-gray-600 bg-blue-50 p-2 rounded border border-blue-100"
+                            dir="rtl">
+                            <span class="text-gerGold"><i class="fa-solid fa-lightbulb"></i></span> <span
+                                class="bg-blue-600 text-white px-2 py-0.5 rounded text-xs ml-1">تلميحة</span> إجابة
+                            متوازنة: تفضل العمل الجماعي لكنك قادر على العمل مستقلا.
+                        </div>
+                    </div>
+                    <div
+                        class="bg-gray-50 rounded-xl p-5 border border-gray-100 shadow-sm relative overflow-hidden group">
+                        <div
+                            class="absolute top-0 right-0 w-8 h-8 bg-gerRed text-white flex items-center justify-center font-black rounded-bl-lg">
+                            Q10</div>
+                        <h4 class="text-xl font-bold text-gray-900 mb-3 ml-2 mt-1 dir-ltr font-inter select-all pr-8"
+                            dir="ltr">Haben Sie noch Fragen an uns?</h4>
+                        <div class="border-l-4 border-green-500 pl-4 py-2 bg-white rounded-r-lg shadow-sm mb-3 ml-2 font-inter text-gray-800 font-medium select-all"
+                            dir="ltr">
                             Ja, mich würde interessieren: Wie sieht die Einarbeitungsphase in den ersten Wochen aus?
                         </div>
-                        <div class="text-sm font-semibold dir-rtl text-right text-gray-600 bg-blue-50 p-2 rounded border border-blue-100" dir="rtl">
-                            <span class="text-gerGold"><i class="fa-solid fa-lightbulb"></i></span> <span class="bg-blue-600 text-white px-2 py-0.5 rounded text-xs ml-1">تلميحة</span> يجب أن تسأل سؤالاً دائماً! هذا يظهر اهتمامك البالغ.
+                        <div class="text-sm font-semibold dir-rtl text-right text-gray-600 bg-blue-50 p-2 rounded border border-blue-100"
+                            dir="rtl">
+                            <span class="text-gerGold"><i class="fa-solid fa-lightbulb"></i></span> <span
+                                class="bg-blue-600 text-white px-2 py-0.5 rounded text-xs ml-1">تلميحة</span> يجب أن
+                            تسأل سؤالاً دائماً! هذا يظهر اهتمامك البالغ.
                         </div>
                     </div>
                 </div>
             </div>
 
 
-    <!-- Selection Modal -->
-    <div id="selectionModal" class="modal fixed inset-0 z-[60] flex items-center justify-center p-4 invisible">
-        <div class="modal-bg absolute inset-0 bg-gerBlack opacity-50" onclick="closeSelectionModal()"></div>
-        <div class="modal-content relative bg-white rounded-2xl shadow-2xl w-full max-w-sm max-h-[90vh] flex flex-col transform transition-all duration-300 scale-95 opacity-0">
-            <div class="p-4 border-b border-gray-200 flex justify-between items-center bg-gray-50 rounded-t-2xl">
-                <button onclick="closeSelectionModal()" class="text-gray-400 hover:text-gray-600 transition-colors">
-                    <i class="fa-solid fa-xmark text-xl"></i>
-                </button>
-                <h3 class="text-xl font-black font-cairo text-gray-800" dir="rtl">اختر تخصصك</h3>
-            </div>
-            <div class="p-6 overflow-y-auto font-inter" dir="rtl">
-                <div class="flex flex-col gap-3 font-cairo font-bold">
-                    <button onclick="closeSelectionModal(); openModal('Nursing')" class="bg-blue-50 border border-blue-200 text-blue-800 py-3 rounded-xl hover:bg-blue-100 flex justify-between items-center px-4">
-                        <span>Pflege (التمريض)</span>
-                        <span class="bg-green-200 text-green-800 text-xs px-2 py-1 rounded block" dir="ltr">FREE / مجاني</span>
-                    </button>
-                    <button onclick="closeSelectionModal(); openModal('Mechatronics')" class="bg-gray-50 border border-gray-200 text-gray-800 py-3 rounded-xl hover:bg-gray-100 flex justify-start items-center px-4">Mechatronik (الميكانيك)</button>
-                    <button onclick="closeSelectionModal(); openModal('IT')" class="bg-gray-50 border border-gray-200 text-gray-800 py-3 rounded-xl hover:bg-gray-100 flex justify-start items-center px-4">Informatik (المعلوميات)</button>
-                    <button onclick="closeSelectionModal(); openModal('Logistics')" class="bg-gray-50 border border-gray-200 text-gray-800 py-3 rounded-xl hover:bg-gray-100 flex justify-start items-center px-4">Logistik (اللوجستيك)</button>
-                    <button onclick="closeSelectionModal(); openModal('Gastronomy')" class="bg-gray-50 border border-gray-200 text-gray-800 py-3 rounded-xl hover:bg-gray-100 flex justify-start items-center px-4">Gastronomie (الفندقة والطبخ)</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Modal HTML Start -->
-    <div id="spreadsheetModal" class="modal" dir="ltr">
-        <div class="modal-content">
-            <div class="p-5 border-b border-gray-200 flex justify-between items-center bg-white rounded-t-xl">
-                <div>
-                    <h3 id="modalTitle" class="text-xl font-black text-gray-800 font-inter">Live Company List</h3>
-                    <p class="text-xs text-gray-500 font-semibold font-inter mt-1">Showing 20 verified HR contacts</p>
-                </div>
-                <button onclick="closeModal()" class="text-gray-400 hover:text-red-500 text-2xl transition-colors">&times;</button>
-            </div>
-            <div class="table-container">
-                <table class="sheet-table">
-                    <thead>
-                        <tr>
-                            <th>Company Name</th>
-                            <th>City</th>
-                            <th>Niche</th>
-                            <th>Status</th>
-                            <th>Email Contact</th>
-                        </tr>
-                    </thead>
-                    <tbody id="tableBody">
-                        <!-- Instantiated by JS -->
-                    </tbody>
-                </table>
-            </div>
-            <div class="p-5 border-t border-gray-200 bg-gray-50 rounded-b-xl text-center" dir="rtl">
-                <p class="text-base text-gray-800 font-bold font-cairo mb-4">بغيتي توصل للائحة كاملة فيها أكثر من 1000 شركة؟</p>
-                <a href="#packages" onclick="closeModal()" class="inline-block bg-gerBlack hover:bg-gray-800 text-white font-bold py-3 px-8 rounded-xl font-cairo transition-colors text-lg shadow-md">خود اللائحة دابا <i class="fa-solid fa-arrow-left mr-2"></i></a>
-            </div>
-        </div>
-    </div>
-    <!-- Modal HTML End -->
-
-
-    <section class="py-16 px-4 wa-wall">
-        <div class="max-w-3xl mx-auto">
-            <div class="text-center mb-10">
-                <h2
-                    class="text-2xl md:text-3xl font-bold text-gerBlack bg-white inline-block px-6 py-3 rounded-xl shadow-sm border border-gray-100">
-                    شهادات الشباب من داخل الواتساب 💬
-                </h2>
-            </div>
-
-            <div class="flex flex-col gap-4">
-                <div class="wa-msg ml-auto">
-                    <div class="flex items-center gap-3 mb-2" dir="rtl">
-                        <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 font-bold text-sm">
-                            ي.م
+            <!-- Selection Modal -->
+            <div id="selectionModal" class="modal fixed inset-0 z-[60] flex items-center justify-center p-4 invisible">
+                <div class="modal-bg absolute inset-0 bg-gerBlack opacity-50" onclick="closeSelectionModal()"></div>
+                <div
+                    class="modal-content relative bg-white rounded-2xl shadow-2xl w-full max-w-sm max-h-[90vh] flex flex-col transform transition-all duration-300 scale-95 opacity-0">
+                    <div
+                        class="p-4 border-b border-gray-200 flex justify-between items-center bg-gray-50 rounded-t-2xl">
+                        <button onclick="closeSelectionModal()"
+                            class="text-gray-400 hover:text-gray-600 transition-colors">
+                            <i class="fa-solid fa-xmark text-xl"></i>
+                        </button>
+                        <h3 class="text-xl font-black font-cairo text-gray-800" dir="rtl">اختر تخصصك</h3>
+                    </div>
+                    <div class="p-6 overflow-y-auto font-inter" dir="rtl">
+                        <div class="flex flex-col gap-3 font-cairo font-bold">
+                            <button onclick="closeSelectionModal(); openModal('Nursing')"
+                                class="bg-blue-50 border border-blue-200 text-blue-800 py-3 rounded-xl hover:bg-blue-100 flex justify-between items-center px-4">
+                                <span>Pflege (التمريض)</span>
+                                <span class="bg-green-200 text-green-800 text-xs px-2 py-1 rounded block" dir="ltr">FREE
+                                    / مجاني</span>
+                            </button>
+                            <button onclick="closeSelectionModal(); openModal('Mechatronics')"
+                                class="bg-gray-50 border border-gray-200 text-gray-800 py-3 rounded-xl hover:bg-gray-100 flex justify-start items-center px-4">Mechatronik
+                                (الميكانيك)</button>
+                            <button onclick="closeSelectionModal(); openModal('IT')"
+                                class="bg-gray-50 border border-gray-200 text-gray-800 py-3 rounded-xl hover:bg-gray-100 flex justify-start items-center px-4">Informatik
+                                (المعلوميات)</button>
+                            <button onclick="closeSelectionModal(); openModal('Logistics')"
+                                class="bg-gray-50 border border-gray-200 text-gray-800 py-3 rounded-xl hover:bg-gray-100 flex justify-start items-center px-4">Logistik
+                                (اللوجستيك)</button>
+                            <button onclick="closeSelectionModal(); openModal('Gastronomy')"
+                                class="bg-gray-50 border border-gray-200 text-gray-800 py-3 rounded-xl hover:bg-gray-100 flex justify-start items-center px-4">Gastronomie
+                                (الفندقة والطبخ)</button>
                         </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal HTML Start -->
+            <div id="spreadsheetModal" class="modal" dir="ltr">
+                <div class="modal-content">
+                    <div class="p-5 border-b border-gray-200 flex justify-between items-center bg-white rounded-t-xl">
                         <div>
-                            <p class="font-bold text-gray-800 text-sm">ياسين - الدار البيضاء</p>
+                            <h3 id="modalTitle" class="text-xl font-black text-gray-800 font-inter">Live Company List
+                            </h3>
+                            <p class="text-xs text-gray-500 font-semibold font-inter mt-1">Showing 20 verified HR
+                                contacts</p>
                         </div>
+                        <button onclick="closeModal()"
+                            class="text-gray-400 hover:text-red-500 text-2xl transition-colors">&times;</button>
                     </div>
-                    <p class="text-gray-800 font-semibold text-sm md:text-base">الخوت صراحة خدمة نقية، الدوسي ديالي تقبل اليوم وغندير الأنترفيو السيمانة الجاية! شكرا على التوقيت الاستراتيجي ديالكم 🙏</p>
-                    <div class="text-xs text-gray-400 mt-2 flex justify-end items-center gap-1 font-inter">
-                        10:24 AM <i class="fa-solid fa-check-double text-blue-500"></i>
+                    <div class="table-container">
+                        <table class="sheet-table">
+                            <thead>
+                                <tr>
+                                    <th>Company Name</th>
+                                    <th>City</th>
+                                    <th>Niche</th>
+                                    <th>Status</th>
+                                    <th>Email Contact</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tableBody">
+                                <!-- Instantiated by JS -->
+                            </tbody>
+                        </table>
                     </div>
-                </div>
-
-                <div class="wa-msg ml-auto">
-                    <div class="flex items-center gap-3 mb-2" dir="rtl">
-                        <div class="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center text-green-600 font-bold text-sm">
-                            أ.ع
-                        </div>
-                        <div>
-                            <p class="font-bold text-gray-800 text-sm">أمين - طنجة</p>
-                        </div>
-                    </div>
-                    <p class="text-gray-800 font-semibold text-sm md:text-base">الـ CV اللي صايبتو ليا هربان، الـ HR قالي بلي عجبو بزاف حيت منظم على الطريقة الألمانية ومافيهش الزواق الخاوي.</p>
-                    <div class="text-xs text-gray-400 mt-2 flex justify-end items-center gap-1 font-inter">
-                        14:15 PM <i class="fa-solid fa-check-double text-blue-500"></i>
-                    </div>
-                </div>
-
-                <div class="wa-msg ml-auto">
-                    <div class="flex items-center gap-3 mb-2" dir="rtl">
-                        <div class="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center text-purple-600 font-bold text-sm">
-                            م.ر
-                        </div>
-                        <div>
-                            <p class="font-bold text-gray-800 text-sm">مروان - الرباط</p>
-                        </div>
-                    </div>
-                    <p class="text-gray-800 font-semibold text-sm md:text-base">خديت الباقة الشاملة وارتاحيت، درتو خدمتكم متقونة ومن البارح لليوم جاني الرد الأول. الله يحفظكم الدراري 🔥</p>
-                    <div class="text-xs text-gray-400 mt-2 flex justify-end items-center gap-1 font-inter">
-                        18:05 PM <i class="fa-solid fa-check-double text-blue-500"></i>
+                    <div class="p-5 border-t border-gray-200 bg-gray-50 rounded-b-xl text-center" dir="rtl">
+                        <p class="text-base text-gray-800 font-bold font-cairo mb-4">بغيتي توصل للائحة كاملة فيها أكثر
+                            من 1000 شركة؟</p>
+                        <a href="#packages" onclick="closeModal()"
+                            class="inline-block bg-gerBlack hover:bg-gray-800 text-white font-bold py-3 px-8 rounded-xl font-cairo transition-colors text-lg shadow-md">خود
+                            اللائحة دابا <i class="fa-solid fa-arrow-left mr-2"></i></a>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+            <!-- Modal HTML End -->
 
-    <footer class="bg-gerBlack text-center py-8 border-t border-gray-800">
-        <p class="text-gray-500 font-inter text-sm">&copy; 2026 DossierPro Germany. All rights reserved.</p>
-    </footer>
 
-    <a href="https://wa.me/212652160514" target="_blank"
-        class="floating-btn fixed bottom-6 left-6 bg-waGreen text-white p-4 rounded-full shadow-[0_4px_15px_rgba(37,211,102,0.4)] hover:bg-green-500 transition-colors z-50 flex items-center justify-center w-16 h-16">
-        <i class="fa-brands fa-whatsapp text-3xl"></i>
-    </a>
+            <section class="py-16 px-4 wa-wall">
+                <div class="max-w-3xl mx-auto">
+                    <div class="text-center mb-10">
+                        <h2
+                            class="text-2xl md:text-3xl font-bold text-gerBlack bg-white inline-block px-6 py-3 rounded-xl shadow-sm border border-gray-100">
+                            شهادات الشباب من داخل الواتساب 💬
+                        </h2>
+                    </div>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            const countEl = document.getElementById('live-count');
+                    <div class="flex flex-col gap-4">
+                        <div class="wa-msg ml-auto">
+                            <div class="flex items-center gap-3 mb-2" dir="rtl">
+                                <div
+                                    class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 font-bold text-sm">
+                                    ي.م
+                                </div>
+                                <div>
+                                    <p class="font-bold text-gray-800 text-sm">ياسين - الدار البيضاء</p>
+                                </div>
+                            </div>
+                            <p class="text-gray-800 font-semibold text-sm md:text-base">الخوت صراحة خدمة نقية، الدوسي
+                                ديالي تقبل اليوم وغندير الأنترفيو السيمانة الجاية! شكرا على التوقيت الاستراتيجي ديالكم
+                                🙏</p>
+                            <div class="text-xs text-gray-400 mt-2 flex justify-end items-center gap-1 font-inter">
+                                10:24 AM <i class="fa-solid fa-check-double text-blue-500"></i>
+                            </div>
+                        </div>
 
-            // Start with a random number
-            let currentCount = Math.floor(Math.random() * (22 - 14 + 1)) + 14;
-            countEl.innerText = currentCount;
+                        <div class="wa-msg ml-auto">
+                            <div class="flex items-center gap-3 mb-2" dir="rtl">
+                                <div
+                                    class="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center text-green-600 font-bold text-sm">
+                                    أ.ع
+                                </div>
+                                <div>
+                                    <p class="font-bold text-gray-800 text-sm">أمين - طنجة</p>
+                                </div>
+                            </div>
+                            <p class="text-gray-800 font-semibold text-sm md:text-base">الـ CV اللي صايبتو ليا هربان،
+                                الـ HR قالي بلي عجبو بزاف حيت منظم على الطريقة الألمانية ومافيهش الزواق الخاوي.</p>
+                            <div class="text-xs text-gray-400 mt-2 flex justify-end items-center gap-1 font-inter">
+                                14:15 PM <i class="fa-solid fa-check-double text-blue-500"></i>
+                            </div>
+                        </div>
 
-            // Fluctuate every few seconds
-            setInterval(() => {
-                const change = Math.floor(Math.random() * 3) - 1; // -1, 0, or +1
-                currentCount += change;
+                        <div class="wa-msg ml-auto">
+                            <div class="flex items-center gap-3 mb-2" dir="rtl">
+                                <div
+                                    class="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center text-purple-600 font-bold text-sm">
+                                    م.ر
+                                </div>
+                                <div>
+                                    <p class="font-bold text-gray-800 text-sm">مروان - الرباط</p>
+                                </div>
+                            </div>
+                            <p class="text-gray-800 font-semibold text-sm md:text-base">خديت الباقة الشاملة وارتاحيت،
+                                درتو خدمتكم متقونة ومن البارح لليوم جاني الرد الأول. الله يحفظكم الدراري 🔥</p>
+                            <div class="text-xs text-gray-400 mt-2 flex justify-end items-center gap-1 font-inter">
+                                18:05 PM <i class="fa-solid fa-check-double text-blue-500"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-                // Keep bounds realistic
-                if (currentCount < 14) currentCount = 14 + Math.floor(Math.random() * 2);
-                if (currentCount > 25) currentCount = 25 - Math.floor(Math.random() * 2);
+            <footer class="bg-gerBlack text-center py-8 border-t border-gray-800">
+                <p class="text-gray-500 font-inter text-sm">&copy; 2026 DossierPro Germany. All rights reserved.</p>
+            </footer>
 
-                // UI update with a slight fade
-                countEl.style.opacity = 0;
-                setTimeout(() => {
+            <a href="https://wa.me/212652160514" target="_blank"
+                class="floating-btn fixed bottom-6 left-6 bg-waGreen text-white p-4 rounded-full shadow-[0_4px_15px_rgba(37,211,102,0.4)] hover:bg-green-500 transition-colors z-50 flex items-center justify-center w-16 h-16">
+                <i class="fa-brands fa-whatsapp text-3xl"></i>
+            </a>
+
+            <script>
+                document.addEventListener("DOMContentLoaded", () => {
+                    const countEl = document.getElementById('live-count');
+
+                    // Start with a random number
+                    let currentCount = Math.floor(Math.random() * (22 - 14 + 1)) + 14;
                     countEl.innerText = currentCount;
-                    countEl.style.opacity = 1;
-                }, 300);
 
-            }, 5000); // 5 seconds interval
-        });
-    </script>
+                    // Fluctuate every few seconds
+                    setInterval(() => {
+                        const change = Math.floor(Math.random() * 3) - 1; // -1, 0, or +1
+                        currentCount += change;
+
+                        // Keep bounds realistic
+                        if (currentCount < 14) currentCount = 14 + Math.floor(Math.random() * 2);
+                        if (currentCount > 25) currentCount = 25 - Math.floor(Math.random() * 2);
+
+                        // UI update with a slight fade
+                        countEl.style.opacity = 0;
+                        setTimeout(() => {
+                            countEl.innerText = currentCount;
+                            countEl.style.opacity = 1;
+                        }, 300);
+
+                    }, 5000); // 5 seconds interval
+                });
+            </script>
+
+            <!-- Injected Niche Data -->
+            <script>
+                const nicheData = {
+                    "Nursing": [
+                        {
+                            "company": "Ludwig Fresenius Schulen",
+                            "location": "N/A",
+                            "niche": "Nursing",
+                            "email": "ber***@ludwig-fresenius.de",
+                            "fullEmail": "beratung@ludwig-fresenius.de"
+                        },
+                        {
+                            "company": "Ludwig Fresenius Schulen",
+                            "location": "N/A",
+                            "niche": "Nursing",
+                            "email": "tcd***@a.customvendorconsents",
+                            "fullEmail": "tcd@a.customvendorconsents"
+                        },
+                        {
+                            "company": "Sana Klinikum Offenbach GmbH",
+                            "location": "N/A",
+                            "niche": "Nursing",
+                            "email": "tcd***@a.customvendorconsents",
+                            "fullEmail": "tcd@a.customvendorconsents"
+                        },
+                        {
+                            "company": "AWO Bezirksverband Schwaben e.V.",
+                            "location": "N/A",
+                            "niche": "Nursing",
+                            "email": "tcd***@a.customvendorconsents",
+                            "fullEmail": "tcd@a.customvendorconsents"
+                        },
+                        {
+                            "company": "Caritasverband für das Bistum Dresden-Meißen e. V.",
+                            "location": "N/A",
+                            "niche": "Nursing",
+                            "email": "tcd***@a.customvendorconsents",
+                            "fullEmail": "tcd@a.customvendorconsents"
+                        },
+                        {
+                            "company": "Herz- und Diabeteszentrum Nordrhein-Westfalen",
+                            "location": "N/A",
+                            "niche": "Nursing",
+                            "email": "tcd***@a.customvendorconsents",
+                            "fullEmail": "tcd@a.customvendorconsents"
+                        },
+                        {
+                            "company": "Bürgerhospital und Clementine Kinderhospital Frankfurt gGmbH",
+                            "location": "N/A",
+                            "niche": "Nursing",
+                            "email": "ein***@z.du",
+                            "fullEmail": "eins@z.du"
+                        },
+                        {
+                            "company": "MÜNCHENSTIFT",
+                            "location": "N/A",
+                            "niche": "Nursing",
+                            "email": "tcd***@a.customvendorconsents",
+                            "fullEmail": "tcd@a.customvendorconsents"
+                        },
+                        {
+                            "company": "St. Augustinus Gruppe",
+                            "location": "N/A",
+                            "niche": "Nursing",
+                            "email": "tcd***@a.customvendorconsents",
+                            "fullEmail": "tcd@a.customvendorconsents"
+                        },
+                        {
+                            "company": "Sana-Krankenhaus Rügen GmbH",
+                            "location": "N/A",
+                            "niche": "Nursing",
+                            "email": "tcd***@a.customvendorconsents",
+                            "fullEmail": "tcd@a.customvendorconsents"
+                        },
+                        {
+                            "company": "Campus Berufsbildung e. V.",
+                            "location": "N/A",
+                            "niche": "Nursing",
+                            "email": "cam***@campus-bb.de",
+                            "fullEmail": "campus-sued@campus-bb.de"
+                        },
+                        {
+                            "company": "Evangelische Heimstiftung GmbH",
+                            "location": "N/A",
+                            "niche": "Nursing",
+                            "email": "tcd***@a.customvendorconsents",
+                            "fullEmail": "tcd@a.customvendorconsents"
+                        },
+                        {
+                            "company": "KORIAN Deutschland",
+                            "location": "N/A",
+                            "niche": "Nursing",
+                            "email": "tcd***@a.customvendorconsents",
+                            "fullEmail": "tcd@a.customvendorconsents"
+                        },
+                        {
+                            "company": "Diakonie Michaelshoven e.V.",
+                            "location": "N/A",
+                            "niche": "Nursing",
+                            "email": "tcd***@a.customvendorconsents",
+                            "fullEmail": "tcd@a.customvendorconsents"
+                        },
+                        {
+                            "company": "Victor’s Group",
+                            "location": "N/A",
+                            "niche": "Nursing",
+                            "email": "tcd***@a.customvendorconsents",
+                            "fullEmail": "tcd@a.customvendorconsents"
+                        },
+                        {
+                            "company": "Asklepios Kliniken GmbH &amp; Co. KGaA",
+                            "location": "N/A",
+                            "niche": "Nursing",
+                            "email": "s.n***@asklepios.com",
+                            "fullEmail": "s.nuesse@asklepios.com"
+                        },
+                        {
+                            "company": "Alexianer GmbH",
+                            "location": "N/A",
+                            "niche": "Nursing",
+                            "email": "tcd***@a.customvendorconsents",
+                            "fullEmail": "tcd@a.customvendorconsents"
+                        },
+                        {
+                            "company": "Arbeiterwohlfahrt Kreisverband Hansestadt Bremen e.V.",
+                            "location": "N/A",
+                            "niche": "Nursing",
+                            "email": "per***@awo-bremen.de",
+                            "fullEmail": "personal@awo-bremen.de"
+                        },
+                        {
+                            "company": "Alexianer GmbH",
+                            "location": "N/A",
+                            "niche": "Nursing",
+                            "email": "sta***@l.anerkannten",
+                            "fullEmail": "sta@l.anerkannten"
+                        },
+                        {
+                            "company": "Alexianer GmbH",
+                            "location": "N/A",
+                            "niche": "Nursing",
+                            "email": "pfl***@alexianer.de",
+                            "fullEmail": "pflegeschule@alexianer.de"
+                        }
+                    ],
+                    "IT": [
+                        {
+                            "company": "kubus IT GbR",
+                            "location": "N/A",
+                            "niche": "IT",
+                            "email": "tom***@kubus-it.de",
+                            "fullEmail": "***********"
+                        },
+                        {
+                            "company": "AOK PLUS - Die Gesundheitskasse für Sachsen und Thüringen.",
+                            "location": "N/A",
+                            "niche": "IT",
+                            "email": "tom***@kubus-it.de",
+                            "fullEmail": "***********"
+                        },
+                        {
+                            "company": "Bundesanstalt für Finanzdienstleistungsaufsicht BaFin",
+                            "location": "N/A",
+                            "niche": "IT",
+                            "email": "aus***@bafin.de",
+                            "fullEmail": "***********"
+                        },
+                        {
+                            "company": "Fast Lane Institute for Knowledge Transfer GmbH",
+                            "location": "N/A",
+                            "niche": "IT",
+                            "email": "bew***@flane.de",
+                            "fullEmail": "***********"
+                        },
+                        {
+                            "company": "dynadev GmbH",
+                            "location": "N/A",
+                            "niche": "IT",
+                            "email": "job***@dynadev.de",
+                            "fullEmail": "***********"
+                        },
+                        {
+                            "company": "DATEV eG",
+                            "location": "N/A",
+                            "niche": "IT",
+                            "email": "aus***@datev.de",
+                            "fullEmail": "***********"
+                        },
+                        {
+                            "company": "VIVAVIS AG",
+                            "location": "N/A",
+                            "niche": "IT",
+                            "email": "rec***@vivavis.com",
+                            "fullEmail": "***********"
+                        },
+                        {
+                            "company": "Fraunhofer-Institut für Nachrichtentechnik, Heinrich-Hertz-Institut, HHI",
+                            "location": "N/A",
+                            "niche": "IT",
+                            "email": "pie***@hhi.fraunhofer.de",
+                            "fullEmail": "***********"
+                        },
+                        {
+                            "company": "Deutsche Post DHL",
+                            "location": "N/A",
+                            "niche": "IT",
+                            "email": "bew***@dhl.com",
+                            "fullEmail": "***********"
+                        },
+                        {
+                            "company": "Bundesagentur für Arbeit",
+                            "location": "N/A",
+                            "niche": "IT",
+                            "email": "it-***@arbeitsagentur.de",
+                            "fullEmail": "***********"
+                        },
+                        {
+                            "company": "THOST Projektmanagement GmbH",
+                            "location": "N/A",
+                            "niche": "IT",
+                            "email": "kar***@thost.de",
+                            "fullEmail": "***********"
+                        },
+                        {
+                            "company": "Bundesministerium für Forschung, Technologie und Raumfahrt",
+                            "location": "N/A",
+                            "niche": "IT",
+                            "email": "aus***@bmftr.bund.de",
+                            "fullEmail": "***********"
+                        },
+                        {
+                            "company": "Brillux GmbH &amp; Co. KG",
+                            "location": "N/A",
+                            "niche": "IT",
+                            "email": "aus***@brillux.de",
+                            "fullEmail": "***********"
+                        },
+                        {
+                            "company": "Westnetz GmbH",
+                            "location": "N/A",
+                            "niche": "IT",
+                            "email": "awz***@westnetz.de",
+                            "fullEmail": "***********"
+                        },
+                        {
+                            "company": "Transgourmet Deutschland GmbH &amp; Co. OHG",
+                            "location": "N/A",
+                            "niche": "IT",
+                            "email": "tea***@transgourmet.de",
+                            "fullEmail": "***********"
+                        },
+                        {
+                            "company": "TOPAS electronic AG",
+                            "location": "N/A",
+                            "niche": "IT",
+                            "email": "bew***@topas.de",
+                            "fullEmail": "***********"
+                        },
+                        {
+                            "company": "DFH Haus GmbH",
+                            "location": "N/A",
+                            "niche": "IT",
+                            "email": "aus***@dfh-haus.de",
+                            "fullEmail": "***********"
+                        },
+                        {
+                            "company": "Mentz GmbH",
+                            "location": "N/A",
+                            "niche": "IT",
+                            "email": "job***@recruiting.mentz.net",
+                            "fullEmail": "***********"
+                        },
+                        {
+                            "company": "Carl Spaeter GmbH",
+                            "location": "N/A",
+                            "niche": "IT",
+                            "email": "l.j***@spaeter.de",
+                            "fullEmail": "***********"
+                        },
+                        {
+                            "company": "Deutsche Rentenversicherung Bund",
+                            "location": "N/A",
+                            "niche": "IT",
+                            "email": "tob***@drv-bund.de",
+                            "fullEmail": "***********"
+                        }
+                    ],
+                    "Mechatronics": [
+                        {
+                            "company": "EEW Energy from Waste GmbH",
+                            "location": "N/A",
+                            "niche": "Mechatronics",
+                            "email": "nav***@or.language",
+                            "fullEmail": "***********"
+                        },
+                        {
+                            "company": "Deutsche Bahn AG",
+                            "location": "N/A",
+                            "niche": "Mechatronics",
+                            "email": "nav***@or.language",
+                            "fullEmail": "***********"
+                        },
+                        {
+                            "company": "Deutsche Post DHL",
+                            "location": "N/A",
+                            "niche": "Mechatronics",
+                            "email": "han***@dhl.com",
+                            "fullEmail": "***********"
+                        },
+                        {
+                            "company": "Amazon",
+                            "location": "N/A",
+                            "niche": "Mechatronics",
+                            "email": "nav***@or.language",
+                            "fullEmail": "***********"
+                        },
+                        {
+                            "company": "Harry-Brot GmbH",
+                            "location": "N/A",
+                            "niche": "Mechatronics",
+                            "email": "nav***@or.language",
+                            "fullEmail": "***********"
+                        },
+                        {
+                            "company": "DPD Deutschland GmbH",
+                            "location": "N/A",
+                            "niche": "Mechatronics",
+                            "email": "nav***@or.language",
+                            "fullEmail": "***********"
+                        },
+                        {
+                            "company": "Solventum Germany GmbH",
+                            "location": "N/A",
+                            "niche": "Mechatronics",
+                            "email": "inn***@ion.hier",
+                            "fullEmail": "***********"
+                        },
+                        {
+                            "company": "STIEBEL ELTRON GmbH &amp; Co. KG",
+                            "location": "N/A",
+                            "niche": "Mechatronics",
+                            "email": "nav***@or.language",
+                            "fullEmail": "***********"
+                        },
+                        {
+                            "company": "BASF",
+                            "location": "N/A",
+                            "niche": "Mechatronics",
+                            "email": "kat***@basf.com",
+                            "fullEmail": "***********"
+                        },
+                        {
+                            "company": "Deutsche Post DHL",
+                            "location": "N/A",
+                            "niche": "Mechatronics",
+                            "email": "bew***@dhl.com",
+                            "fullEmail": "***********"
+                        },
+                        {
+                            "company": "Fressnapf Holding SE",
+                            "location": "N/A",
+                            "niche": "Mechatronics",
+                            "email": "nav***@or.language",
+                            "fullEmail": "***********"
+                        },
+                        {
+                            "company": "frischli Milchwerke GmbH",
+                            "location": "N/A",
+                            "niche": "Mechatronics",
+                            "email": "nav***@or.language",
+                            "fullEmail": "***********"
+                        },
+                        {
+                            "company": "Fuji Seal Germany GmbH",
+                            "location": "N/A",
+                            "niche": "Mechatronics",
+                            "email": "nav***@or.language",
+                            "fullEmail": "***********"
+                        },
+                        {
+                            "company": "Kaufland",
+                            "location": "N/A",
+                            "niche": "Mechatronics",
+                            "email": "nav***@or.language",
+                            "fullEmail": "***********"
+                        },
+                        {
+                            "company": "Stadtwerke Verkehrsgesellschaft Frankfurt am Main mbH",
+                            "location": "N/A",
+                            "niche": "Mechatronics",
+                            "email": "nav***@or.language",
+                            "fullEmail": "***********"
+                        },
+                        {
+                            "company": "DMK Deutsches Milchkontor GmbH",
+                            "location": "N/A",
+                            "niche": "Mechatronics",
+                            "email": "lau***@dmk.de",
+                            "fullEmail": "***********"
+                        },
+                        {
+                            "company": "SMS group GmbH",
+                            "location": "N/A",
+                            "niche": "Mechatronics",
+                            "email": "nav***@or.language",
+                            "fullEmail": "***********"
+                        },
+                        {
+                            "company": "MiE medical imaging electronics GmbH",
+                            "location": "N/A",
+                            "niche": "Mechatronics",
+                            "email": "job***@miegermany.de",
+                            "fullEmail": "***********"
+                        },
+                        {
+                            "company": "DMK Deutsches Milchkontor GmbH",
+                            "location": "N/A",
+                            "niche": "Mechatronics",
+                            "email": "nav***@or.language",
+                            "fullEmail": "***********"
+                        },
+                        {
+                            "company": "SCHOTTEL GmbH",
+                            "location": "N/A",
+                            "niche": "Mechatronics",
+                            "email": "nav***@or.language",
+                            "fullEmail": "***********"
+                        }
+                    ],
+                    "Logistics": [
+                        {
+                            "company": "Flamro Brandschutz-Systeme GmbH",
+                            "location": "N/A",
+                            "niche": "Logistics",
+                            "email": "nav***@or.language",
+                            "fullEmail": "***********"
+                        },
+                        {
+                            "company": "Deutsche Post DHL",
+                            "location": "N/A",
+                            "niche": "Logistics",
+                            "email": "lej***@dhl.com",
+                            "fullEmail": "***********"
+                        },
+                        {
+                            "company": "DSV Global Transport and Logistics",
+                            "location": "N/A",
+                            "niche": "Logistics",
+                            "email": "nav***@or.language",
+                            "fullEmail": "***********"
+                        },
+                        {
+                            "company": "Deutsche Post DHL",
+                            "location": "N/A",
+                            "niche": "Logistics",
+                            "email": "han***@dhl.com",
+                            "fullEmail": "***********"
+                        },
+                        {
+                            "company": "Kaufland",
+                            "location": "N/A",
+                            "niche": "Logistics",
+                            "email": "nav***@or.language",
+                            "fullEmail": "***********"
+                        },
+                        {
+                            "company": "Deutsche Post DHL",
+                            "location": "N/A",
+                            "niche": "Logistics",
+                            "email": "mar***@dhl.com",
+                            "fullEmail": "***********"
+                        },
+                        {
+                            "company": "DPD Deutschland GmbH",
+                            "location": "N/A",
+                            "niche": "Logistics",
+                            "email": "nav***@or.language",
+                            "fullEmail": "***********"
+                        },
+                        {
+                            "company": "TESCOM EUROPE GMBH &amp; CO.KG",
+                            "location": "N/A",
+                            "niche": "Logistics",
+                            "email": "nav***@or.language",
+                            "fullEmail": "***********"
+                        },
+                        {
+                            "company": "Deutsche Post DHL",
+                            "location": "N/A",
+                            "niche": "Logistics",
+                            "email": "dir***@dhl.com",
+                            "fullEmail": "***********"
+                        },
+                        {
+                            "company": "BASF",
+                            "location": "N/A",
+                            "niche": "Logistics",
+                            "email": "mel***@basf.com",
+                            "fullEmail": "***********"
+                        },
+                        {
+                            "company": "Deutsche Post DHL",
+                            "location": "N/A",
+                            "niche": "Logistics",
+                            "email": "jul***@dhl.com",
+                            "fullEmail": "***********"
+                        },
+                        {
+                            "company": "BASF",
+                            "location": "N/A",
+                            "niche": "Logistics",
+                            "email": "mar***@basf.com",
+                            "fullEmail": "***********"
+                        },
+                        {
+                            "company": "DMK Deutsches Milchkontor GmbH",
+                            "location": "N/A",
+                            "niche": "Logistics",
+                            "email": "nav***@or.language",
+                            "fullEmail": "***********"
+                        },
+                        {
+                            "company": "Deutsche Bahn AG",
+                            "location": "N/A",
+                            "niche": "Logistics",
+                            "email": "nav***@or.language",
+                            "fullEmail": "***********"
+                        },
+                        {
+                            "company": "Fressnapf Holding SE",
+                            "location": "N/A",
+                            "niche": "Logistics",
+                            "email": "nav***@or.language",
+                            "fullEmail": "***********"
+                        },
+                        {
+                            "company": "Deutsche Post DHL",
+                            "location": "N/A",
+                            "niche": "Logistics",
+                            "email": "ann***@dhl.com",
+                            "fullEmail": "***********"
+                        },
+                        {
+                            "company": "Deutsche Post DHL",
+                            "location": "N/A",
+                            "niche": "Logistics",
+                            "email": "nic***@dhl.com",
+                            "fullEmail": "***********"
+                        },
+                        {
+                            "company": "Eckerle Technologies GmbH",
+                            "location": "N/A",
+                            "niche": "Logistics",
+                            "email": "nav***@or.language",
+                            "fullEmail": "***********"
+                        },
+                        {
+                            "company": "Deutsche Post DHL",
+                            "location": "N/A",
+                            "niche": "Logistics",
+                            "email": "mar***@dhl.com",
+                            "fullEmail": "***********"
+                        },
+                        {
+                            "company": "KuhnOdice Germany GmbH",
+                            "location": "N/A",
+                            "niche": "Logistics",
+                            "email": "nav***@or.language",
+                            "fullEmail": "***********"
+                        }
+                    ],
+                    "Gastronomy": [
+                        {
+                            "company": "HDI Group",
+                            "location": "N/A",
+                            "niche": "Gastronomy",
+                            "email": "nav***@or.userlanguage",
+                            "fullEmail": "***********"
+                        },
+                        {
+                            "company": "BASF",
+                            "location": "N/A",
+                            "niche": "Gastronomy",
+                            "email": "lin***@basf.com",
+                            "fullEmail": "***********"
+                        },
+                        {
+                            "company": "Nürburgring Holding GmbH, Nürburgring Hotels und Ferienpark",
+                            "location": "N/A",
+                            "niche": "Gastronomy",
+                            "email": "nav***@or.userlanguage",
+                            "fullEmail": "***********"
+                        },
+                        {
+                            "company": "GM Gastromanagement GmbH",
+                            "location": "N/A",
+                            "niche": "Gastronomy",
+                            "email": "nav***@or.userlanguage",
+                            "fullEmail": "***********"
+                        },
+                        {
+                            "company": "Vodafone Deutschland",
+                            "location": "N/A",
+                            "niche": "Gastronomy",
+                            "email": "nav***@or.userlanguage",
+                            "fullEmail": "***********"
+                        },
+                        {
+                            "company": "Schwarz Corporate Solutions KG",
+                            "location": "N/A",
+                            "niche": "Gastronomy",
+                            "email": "nav***@or.userlanguage",
+                            "fullEmail": "***********"
+                        },
+                        {
+                            "company": "Sander Holding GmbH &amp; Co. KG",
+                            "location": "N/A",
+                            "niche": "Gastronomy",
+                            "email": "nav***@or.userlanguage",
+                            "fullEmail": "***********"
+                        },
+                        {
+                            "company": "Notarkasse A.d.ö.R.",
+                            "location": "N/A",
+                            "niche": "Gastronomy",
+                            "email": "nav***@or.userlanguage",
+                            "fullEmail": "***********"
+                        },
+                        {
+                            "company": "Stadtreinigung Hamburg Anstalt des öffentlichen Rechts",
+                            "location": "N/A",
+                            "niche": "Gastronomy",
+                            "email": "nav***@or.userlanguage",
+                            "fullEmail": "***********"
+                        },
+                        {
+                            "company": "Speira GmbH",
+                            "location": "N/A",
+                            "niche": "Gastronomy",
+                            "email": "nav***@or.userlanguage",
+                            "fullEmail": "***********"
+                        },
+                        {
+                            "company": "Privathotels Dr. Lohbeck GmbH &amp; Co. KG",
+                            "location": "N/A",
+                            "niche": "Gastronomy",
+                            "email": "nav***@or.userlanguage",
+                            "fullEmail": "***********"
+                        },
+                        {
+                            "company": "Wicker Gesundheit &amp; Pflege",
+                            "location": "N/A",
+                            "niche": "Gastronomy",
+                            "email": "nav***@or.userlanguage",
+                            "fullEmail": "***********"
+                        },
+                        {
+                            "company": "Dussmann Service Deutschland GmbH",
+                            "location": "N/A",
+                            "niche": "Gastronomy",
+                            "email": "nav***@or.userlanguage",
+                            "fullEmail": "***********"
+                        },
+                        {
+                            "company": "Hoffmann Group",
+                            "location": "N/A",
+                            "niche": "Gastronomy",
+                            "email": "nav***@or.userlanguage",
+                            "fullEmail": "***********"
+                        },
+                        {
+                            "company": "Stadt Wuppertal K.d.ö.R.",
+                            "location": "N/A",
+                            "niche": "Gastronomy",
+                            "email": "nav***@or.userlanguage",
+                            "fullEmail": "***********"
+                        },
+                        {
+                            "company": "Hahne Holding GmbH",
+                            "location": "N/A",
+                            "niche": "Gastronomy",
+                            "email": "job***@hahne-holding.de",
+                            "fullEmail": "***********"
+                        },
+                        {
+                            "company": "ERGO Group AG",
+                            "location": "N/A",
+                            "niche": "Gastronomy",
+                            "email": "axe***@ergo.de",
+                            "fullEmail": "***********"
+                        },
+                        {
+                            "company": "Provinzial Holding AG",
+                            "location": "N/A",
+                            "niche": "Gastronomy",
+                            "email": "nav***@or.userlanguage",
+                            "fullEmail": "***********"
+                        },
+                        {
+                            "company": "EDEKA ZENTRALE Stiftung &amp; Co. KG",
+                            "location": "N/A",
+                            "niche": "Gastronomy",
+                            "email": "nav***@or.userlanguage",
+                            "fullEmail": "***********"
+                        },
+                        {
+                            "company": "Öffentliche Versicherung Braunschweig",
+                            "location": "N/A",
+                            "niche": "Gastronomy",
+                            "email": "nav***@or.userlanguage",
+                            "fullEmail": "***********"
+                        }
+                    ]
+                };
+
+                // Modal Logic
+                const modal = document.getElementById('spreadsheetModal');
+                const modalTitle = document.getElementById('modalTitle');
+                const tableBody = document.getElementById('tableBody');
+
+                function openModal(niche) {
+                    modalTitle.innerText = `${niche} - Verified Companies`;
+                    const data = nicheData[niche] || [];
+
+                    let html = '';
+                    data.forEach((row, index) => {
+                        let isNursing = niche === 'Nursing';
+
+                        let emailHtml = isNursing
+                            ? `<span class="text-blue-600 font-semibold">${row.fullEmail}</span>`
+                            : `
+                     <div class="tooltip">
+                         <span class="text-blue-600 font-semibold blur-text">${row.email}</span>
+                         <span class="tooltiptext">Upgrade to The Pro List for full access</span>
+                     </div>
+                     <div class="tooltip">
+                         <i class="fa-regular fa-copy copy-icon"></i>
+                         <span class="tooltiptext">Upgrade to copy full email</span>
+                     </div>
+                    `;
+
+                        let statusHtml = isNursing
+                            ? `<span class="bg-green-100 text-green-800 font-black px-2 py-1 rounded shadow-sm text-xs border border-green-200"><i class="fa-solid fa-gift"></i> متاح مجاناً</span>`
+                            : `<span class="text-green-600 font-black text-sm"><i class="fa-solid fa-check-circle"></i> Active</span>`;
+
+                        html += `
+                    <tr class="hover:bg-gray-50 transition-colors">
+                        <td class="font-semibold text-gray-800 py-3">${row.company}</td>
+                        <td class="text-gray-600 py-3">${row.location}</td>
+                        <td class="py-3"><span class="bg-gray-100 text-gray-800 px-2 py-1 rounded text-xs font-bold border border-gray-200">${row.niche}</span></td>
+                        <td class="py-3">${statusHtml}</td>
+                        <td class="py-3">
+                            <div class="flex items-center gap-2">
+                                ${emailHtml}
+                            </div>
+                        </td>
+                    </tr>
+                `;
+                    });
+                    tableBody.innerHTML = html;
+                    modal.classList.add('show');
+                    document.body.style.overflow = 'hidden'; // Prevent background scrolling
+                }
+
+                function closeModal() {
+                    modal.classList.remove('show');
+                    document.body.style.overflow = 'auto'; // Restore background scrolling
+                }
+
+                // Close modal when clicking outside of it
+                window.onclick = function (event) {
+                    if (event.target == modal) {
+                        closeModal();
+                    }
+                }
+
+                // Tab Logic
+                function switchTab(tabId) {
+                    // Remove active classes
+                    document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+                    document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
+
+                    // Add to clicked
+                    event.currentTarget.classList.add('active');
+                    document.getElementById(tabId).classList.add('active');
+                }
+
+                // Accordion Logic
+                function toggleAccordion(contentId, btnElement) {
+                    const content = document.getElementById(contentId);
+                    const isActive = btnElement.classList.contains('active');
+
+                    // Close all
+                    document.querySelectorAll('.accordion-header').forEach(btn => {
+                        btn.classList.remove('active');
+                        btn.nextElementSibling.style.maxHeight = null;
+                    });
+
+                    // Toggle clicked
+                    if (!isActive) {
+                        btnElement.classList.add('active');
+                        content.style.maxHeight = content.scrollHeight + "px";
+                    }
+                }
+            </script>
+
+
 
     <!-- Injected Niche Data -->
     <script>
         const nicheData = {
   "Nursing": [
     {
-      "company": "Ludwig Fresenius Schulen",
-      "location": "N/A",
-      "niche": "Nursing",
-      "email": "ber***@ludwig-fresenius.de",
-      "fullEmail": "beratung@ludwig-fresenius.de"
-    },
-    {
-      "company": "Ludwig Fresenius Schulen",
-      "location": "N/A",
-      "niche": "Nursing",
-      "email": "tcd***@a.customvendorconsents",
-      "fullEmail": "tcd@a.customvendorconsents"
-    },
-    {
-      "company": "Sana Klinikum Offenbach GmbH",
-      "location": "N/A",
-      "niche": "Nursing",
-      "email": "tcd***@a.customvendorconsents",
-      "fullEmail": "tcd@a.customvendorconsents"
-    },
-    {
-      "company": "AWO Bezirksverband Schwaben e.V.",
-      "location": "N/A",
-      "niche": "Nursing",
-      "email": "tcd***@a.customvendorconsents",
-      "fullEmail": "tcd@a.customvendorconsents"
-    },
-    {
-      "company": "Caritasverband für das Bistum Dresden-Meißen e. V.",
-      "location": "N/A",
-      "niche": "Nursing",
-      "email": "tcd***@a.customvendorconsents",
-      "fullEmail": "tcd@a.customvendorconsents"
-    },
-    {
-      "company": "Herz- und Diabeteszentrum Nordrhein-Westfalen",
-      "location": "N/A",
-      "niche": "Nursing",
-      "email": "tcd***@a.customvendorconsents",
-      "fullEmail": "tcd@a.customvendorconsents"
-    },
-    {
-      "company": "Bürgerhospital und Clementine Kinderhospital Frankfurt gGmbH",
-      "location": "N/A",
-      "niche": "Nursing",
-      "email": "ein***@z.du",
-      "fullEmail": "eins@z.du"
-    },
-    {
-      "company": "MÜNCHENSTIFT",
-      "location": "N/A",
-      "niche": "Nursing",
-      "email": "tcd***@a.customvendorconsents",
-      "fullEmail": "tcd@a.customvendorconsents"
-    },
-    {
-      "company": "St. Augustinus Gruppe",
-      "location": "N/A",
-      "niche": "Nursing",
-      "email": "tcd***@a.customvendorconsents",
-      "fullEmail": "tcd@a.customvendorconsents"
-    },
-    {
-      "company": "Sana-Krankenhaus Rügen GmbH",
-      "location": "N/A",
-      "niche": "Nursing",
-      "email": "tcd***@a.customvendorconsents",
-      "fullEmail": "tcd@a.customvendorconsents"
-    },
-    {
       "company": "Campus Berufsbildung e. V.",
-      "location": "N/A",
+      "location": "Berlin\nSchulische Ausbildung",
       "niche": "Nursing",
       "email": "cam***@campus-bb.de",
       "fullEmail": "campus-sued@campus-bb.de"
     },
     {
-      "company": "Evangelische Heimstiftung GmbH",
-      "location": "N/A",
-      "niche": "Nursing",
-      "email": "tcd***@a.customvendorconsents",
-      "fullEmail": "tcd@a.customvendorconsents"
-    },
-    {
-      "company": "KORIAN Deutschland",
-      "location": "N/A",
-      "niche": "Nursing",
-      "email": "tcd***@a.customvendorconsents",
-      "fullEmail": "tcd@a.customvendorconsents"
-    },
-    {
-      "company": "Diakonie Michaelshoven e.V.",
-      "location": "N/A",
-      "niche": "Nursing",
-      "email": "tcd***@a.customvendorconsents",
-      "fullEmail": "tcd@a.customvendorconsents"
-    },
-    {
-      "company": "Victor’s Group",
-      "location": "N/A",
-      "niche": "Nursing",
-      "email": "tcd***@a.customvendorconsents",
-      "fullEmail": "tcd@a.customvendorconsents"
-    },
-    {
       "company": "Asklepios Kliniken GmbH &amp; Co. KGaA",
-      "location": "N/A",
+      "location": "Göttingen\nNeu\nSchulische Ausbildung",
       "niche": "Nursing",
       "email": "s.n***@asklepios.com",
       "fullEmail": "s.nuesse@asklepios.com"
     },
     {
-      "company": "Alexianer GmbH",
-      "location": "N/A",
-      "niche": "Nursing",
-      "email": "tcd***@a.customvendorconsents",
-      "fullEmail": "tcd@a.customvendorconsents"
-    },
-    {
       "company": "Arbeiterwohlfahrt Kreisverband Hansestadt Bremen e.V.",
-      "location": "N/A",
+      "location": "Bremen\nNeu\nSchulische Ausbildung",
       "niche": "Nursing",
       "email": "per***@awo-bremen.de",
       "fullEmail": "personal@awo-bremen.de"
     },
     {
       "company": "Alexianer GmbH",
-      "location": "N/A",
+      "location": "Dernbach",
       "niche": "Nursing",
       "email": "sta***@l.anerkannten",
       "fullEmail": "sta@l.anerkannten"
     },
     {
       "company": "Alexianer GmbH",
-      "location": "N/A",
+      "location": "Berlin\nSchnellbewerbung\nSchulische Ausbildung",
       "niche": "Nursing",
       "email": "pfl***@alexianer.de",
       "fullEmail": "pflegeschule@alexianer.de"
+    },
+    {
+      "company": "Asklepios Kliniken GmbH &amp; Co. KGaA",
+      "location": "Lich\nSchulische Ausbildung",
+      "niche": "Nursing",
+      "email": "m.n***@asklepios.com",
+      "fullEmail": "m.naegele@asklepios.com"
+    },
+    {
+      "company": "DRK-Krankenhaus Grevesmühlen gGmbH",
+      "location": "Grevesmühlen\nSchnellbewerbung\nSchulische Ausbildung",
+      "niche": "Nursing",
+      "email": "rom***@drk-kh-gvm.de",
+      "fullEmail": "roman.grams@drk-kh-gvm.de"
+    },
+    {
+      "company": "Asklepios Kliniken GmbH &amp; Co. KGaA",
+      "location": "Sylt\nSchulische Ausbildung",
+      "niche": "Nursing",
+      "email": "ke.***@asklepios.com",
+      "fullEmail": "ke.korte@asklepios.com"
+    },
+    {
+      "company": "Landeskrankenhaus (AöR)",
+      "location": "Alzey\nSchulische Ausbildung\nVollzeit",
+      "niche": "Nursing",
+      "email": "bew***@landeskrankenhaus.de",
+      "fullEmail": "bewerbung@landeskrankenhaus.de"
+    },
+    {
+      "company": "Asklepios Kliniken GmbH &amp; Co. KGaA",
+      "location": "Radeberg\nSchulische Ausbildung",
+      "niche": "Nursing",
+      "email": "m.p***@asklepios.com",
+      "fullEmail": "m.palme@asklepios.com"
+    },
+    {
+      "company": "Bundeswehr",
+      "location": "Koblenz\nSchulische Ausbildung",
+      "niche": "Nursing",
+      "email": "bwd***@bundeswehr.org",
+      "fullEmail": "bwdlzkoblenzpersonalangelegenheiten@bundeswehr.org"
+    },
+    {
+      "company": "Schwarzwald-Baar Klinikum Villingen-Schwenningen GmbH",
+      "location": "Villingen-Schwenningen\nSchulische Ausbildung",
+      "niche": "Nursing",
+      "email": "sch***@sbk-vs.de",
+      "fullEmail": "schulen.sekretariat@sbk-vs.de"
+    },
+    {
+      "company": "Asklepios Kliniken GmbH &amp; Co. KGaA",
+      "location": "Göttingen\nSchulische Ausbildung",
+      "niche": "Nursing",
+      "email": "i.e***@asklepios.com",
+      "fullEmail": "i.eckardt@asklepios.com"
+    },
+    {
+      "company": "Victor’s Group",
+      "location": "Lahnstein\nSchulische Ausbildung",
+      "niche": "Nursing",
+      "email": "sta***@l.anerkannten",
+      "fullEmail": "sta@l.anerkannten"
+    },
+    {
+      "company": "Asklepios Kliniken GmbH &amp; Co. KGaA",
+      "location": "Hamburg\nSchulische Ausbildung",
+      "niche": "Nursing",
+      "email": "ler***@asklepios.com",
+      "fullEmail": "lernepflegein.barmbek@asklepios.com"
+    },
+    {
+      "company": "Landeskrankenhaus (AöR)",
+      "location": "Andernach\nSchulische Ausbildung",
+      "niche": "Nursing",
+      "email": "sta***@l.anerkannten",
+      "fullEmail": "sta@l.anerkannten"
+    },
+    {
+      "company": "KLINIK BAVARIA Kreischa",
+      "location": "Kreischa\nSchulische Ausbildung",
+      "niche": "Nursing",
+      "email": "per***@klinik-bavaria.de",
+      "fullEmail": "personal@klinik-bavaria.de"
+    },
+    {
+      "company": "Alexianer GmbH",
+      "location": "Münster\nSchulische Ausbildung",
+      "niche": "Nursing",
+      "email": "zfg***@alexianer.de",
+      "fullEmail": "zfg-sekretariat@alexianer.de"
+    },
+    {
+      "company": "AWO München gemeinnützige Betriebs-GmbH",
+      "location": "München",
+      "niche": "Nursing",
+      "email": "ger***@rie.altenpflege",
+      "fullEmail": "geri@rie.altenpflege"
+    },
+    {
+      "company": "Schussentalklinik Fachklinik für internistische Psychosomatik gGmbH",
+      "location": "Aulendorf",
+      "niche": "Nursing",
+      "email": "con***@schussental-klinik.de",
+      "fullEmail": "constanze.droste@schussental-klinik.de"
     }
   ],
   "IT": [
     {
       "company": "kubus IT GbR",
-      "location": "N/A",
+      "location": "München",
       "niche": "IT",
       "email": "tom***@kubus-it.de",
-      "fullEmail": "***********"
+      "fullEmail": "tom.blumenstein@kubus-it.de"
     },
     {
       "company": "AOK PLUS - Die Gesundheitskasse für Sachsen und Thüringen.",
-      "location": "N/A",
+      "location": "Dresden",
       "niche": "IT",
       "email": "tom***@kubus-it.de",
-      "fullEmail": "***********"
+      "fullEmail": "tom.blumenstein@kubus-it.de"
     },
     {
       "company": "Bundesanstalt für Finanzdienstleistungsaufsicht BaFin",
-      "location": "N/A",
+      "location": "Bonn",
       "niche": "IT",
       "email": "aus***@bafin.de",
-      "fullEmail": "***********"
+      "fullEmail": "ausbildung@bafin.de"
     },
     {
       "company": "Fast Lane Institute for Knowledge Transfer GmbH",
-      "location": "N/A",
+      "location": "Berlin\nDuale Ausbildung\nHomeoffice möglich",
       "niche": "IT",
       "email": "bew***@flane.de",
-      "fullEmail": "***********"
+      "fullEmail": "bewerbung@flane.de"
     },
     {
       "company": "dynadev GmbH",
-      "location": "N/A",
+      "location": "Darmstadt",
       "niche": "IT",
       "email": "job***@dynadev.de",
-      "fullEmail": "***********"
+      "fullEmail": "jobs@dynadev.de"
     },
     {
       "company": "DATEV eG",
-      "location": "N/A",
+      "location": "Nürnberg\nDuale Ausbildung\nHomeoffice möglich",
       "niche": "IT",
       "email": "aus***@datev.de",
-      "fullEmail": "***********"
+      "fullEmail": "ausbildung@datev.de"
     },
     {
       "company": "VIVAVIS AG",
-      "location": "N/A",
+      "location": "Koblenz\nDuale Ausbildung",
       "niche": "IT",
       "email": "rec***@vivavis.com",
-      "fullEmail": "***********"
+      "fullEmail": "recruiting@vivavis.com"
     },
     {
       "company": "Fraunhofer-Institut für Nachrichtentechnik, Heinrich-Hertz-Institut, HHI",
-      "location": "N/A",
+      "location": "Deutschland",
       "niche": "IT",
       "email": "pie***@hhi.fraunhofer.de",
-      "fullEmail": "***********"
+      "fullEmail": "pieter.gross@hhi.fraunhofer.de"
     },
     {
       "company": "Deutsche Post DHL",
-      "location": "N/A",
+      "location": "Deutschland",
       "niche": "IT",
       "email": "bew***@dhl.com",
-      "fullEmail": "***********"
+      "fullEmail": "bewerbung.dhl@dhl.com"
     },
     {
       "company": "Bundesagentur für Arbeit",
-      "location": "N/A",
+      "location": "Deutschland",
       "niche": "IT",
       "email": "it-***@arbeitsagentur.de",
-      "fullEmail": "***********"
+      "fullEmail": "it-systemhaus.karriere@arbeitsagentur.de"
     },
     {
       "company": "THOST Projektmanagement GmbH",
-      "location": "N/A",
+      "location": "Pforzheim\nDuale Ausbildung",
       "niche": "IT",
       "email": "kar***@thost.de",
-      "fullEmail": "***********"
+      "fullEmail": "karriere@thost.de"
     },
     {
       "company": "Bundesministerium für Forschung, Technologie und Raumfahrt",
-      "location": "N/A",
+      "location": "Bonn\nNeu\nDuale Ausbildung\nTeilzeit",
       "niche": "IT",
       "email": "aus***@bmftr.bund.de",
-      "fullEmail": "***********"
+      "fullEmail": "ausbildungbonn@bmftr.bund.de"
     },
     {
       "company": "Brillux GmbH &amp; Co. KG",
-      "location": "N/A",
+      "location": "Münster\nNeu\nDuale Ausbildung",
       "niche": "IT",
       "email": "aus***@brillux.de",
-      "fullEmail": "***********"
+      "fullEmail": "ausbildung@brillux.de"
     },
     {
       "company": "Westnetz GmbH",
-      "location": "N/A",
+      "location": "Niederzier\nNeu\nDuale Ausbildung",
       "niche": "IT",
       "email": "awz***@westnetz.de",
-      "fullEmail": "***********"
+      "fullEmail": "awz-niederzier@westnetz.de"
     },
     {
       "company": "Transgourmet Deutschland GmbH &amp; Co. OHG",
-      "location": "N/A",
+      "location": "Riedstadt\nDuale Ausbildung",
       "niche": "IT",
       "email": "tea***@transgourmet.de",
-      "fullEmail": "***********"
+      "fullEmail": "team-ausbildung@transgourmet.de"
     },
     {
       "company": "TOPAS electronic AG",
-      "location": "N/A",
+      "location": "Hannover\nSchnellbewerbung\nDuale Ausbildung",
       "niche": "IT",
       "email": "bew***@topas.de",
-      "fullEmail": "***********"
+      "fullEmail": "bewerbung@topas.de"
     },
     {
       "company": "DFH Haus GmbH",
-      "location": "N/A",
+      "location": "Simmern\nSchnellbewerbung\nDuale Ausbildung",
       "niche": "IT",
       "email": "aus***@dfh-haus.de",
-      "fullEmail": "***********"
+      "fullEmail": "ausbildung@dfh-haus.de"
     },
     {
       "company": "Mentz GmbH",
-      "location": "N/A",
+      "location": "München\nDuale Ausbildung",
       "niche": "IT",
       "email": "job***@recruiting.mentz.net",
-      "fullEmail": "***********"
+      "fullEmail": "jobs@recruiting.mentz.net"
     },
     {
       "company": "Carl Spaeter GmbH",
-      "location": "N/A",
+      "location": "Duisburg\nDuale Ausbildung",
       "niche": "IT",
       "email": "l.j***@spaeter.de",
-      "fullEmail": "***********"
+      "fullEmail": "l.jahn@spaeter.de"
     },
     {
       "company": "Deutsche Rentenversicherung Bund",
-      "location": "N/A",
+      "location": "Berlin",
       "niche": "IT",
       "email": "tob***@drv-bund.de",
-      "fullEmail": "***********"
+      "fullEmail": "tobias.hipp@drv-bund.de"
     }
   ],
   "Mechatronics": [
     {
       "company": "EEW Energy from Waste GmbH",
-      "location": "N/A",
+      "location": "Eschbach",
       "niche": "Mechatronics",
       "email": "nav***@or.language",
-      "fullEmail": "***********"
+      "fullEmail": "navig@or.language"
     },
     {
       "company": "Deutsche Bahn AG",
-      "location": "N/A",
+      "location": "Deutschland",
       "niche": "Mechatronics",
       "email": "nav***@or.language",
-      "fullEmail": "***********"
+      "fullEmail": "navig@or.language"
     },
     {
       "company": "Deutsche Post DHL",
-      "location": "N/A",
+      "location": "Deutschland",
       "niche": "Mechatronics",
       "email": "han***@dhl.com",
-      "fullEmail": "***********"
+      "fullEmail": "handicap_naund@dhl.com"
     },
     {
       "company": "Amazon",
-      "location": "N/A",
+      "location": "Deutschland",
       "niche": "Mechatronics",
       "email": "nav***@or.language",
-      "fullEmail": "***********"
+      "fullEmail": "navig@or.language"
     },
     {
       "company": "Harry-Brot GmbH",
-      "location": "N/A",
+      "location": "Bergkirchen\nNeu\nDuale Ausbildung",
       "niche": "Mechatronics",
       "email": "nav***@or.language",
-      "fullEmail": "***********"
+      "fullEmail": "navig@or.language"
     },
     {
       "company": "DPD Deutschland GmbH",
-      "location": "N/A",
+      "location": "Melle",
       "niche": "Mechatronics",
       "email": "nav***@or.language",
-      "fullEmail": "***********"
+      "fullEmail": "navig@or.language"
     },
     {
       "company": "Solventum Germany GmbH",
-      "location": "N/A",
+      "location": "Seefeld\nNeu\nDuale Ausbildung",
       "niche": "Mechatronics",
       "email": "inn***@ion.hier",
-      "fullEmail": "***********"
+      "fullEmail": "innov@ion.hier"
     },
     {
       "company": "STIEBEL ELTRON GmbH &amp; Co. KG",
-      "location": "N/A",
+      "location": "Holzminden",
       "niche": "Mechatronics",
       "email": "nav***@or.language",
-      "fullEmail": "***********"
+      "fullEmail": "navig@or.language"
     },
     {
       "company": "BASF",
-      "location": "N/A",
+      "location": "Ludwigshafen\nNeu\nDuale Ausbildung",
       "niche": "Mechatronics",
       "email": "kat***@basf.com",
-      "fullEmail": "***********"
+      "fullEmail": "katrin.statnick@basf.com"
     },
     {
       "company": "Deutsche Post DHL",
-      "location": "N/A",
+      "location": "Deutschland",
       "niche": "Mechatronics",
       "email": "bew***@dhl.com",
-      "fullEmail": "***********"
+      "fullEmail": "bewerbung.dhl@dhl.com"
     },
     {
       "company": "Fressnapf Holding SE",
-      "location": "N/A",
+      "location": "Nörvenich\nDuale Ausbildung",
       "niche": "Mechatronics",
       "email": "nav***@or.language",
-      "fullEmail": "***********"
+      "fullEmail": "navig@or.language"
     },
     {
       "company": "frischli Milchwerke GmbH",
-      "location": "N/A",
+      "location": "Rehburg-Loccum\nDuale Ausbildung",
       "niche": "Mechatronics",
       "email": "nav***@or.language",
-      "fullEmail": "***********"
+      "fullEmail": "navig@or.language"
     },
     {
       "company": "Fuji Seal Germany GmbH",
-      "location": "N/A",
+      "location": "Aichtal\nNeu\nDuale Ausbildung",
       "niche": "Mechatronics",
       "email": "nav***@or.language",
-      "fullEmail": "***********"
+      "fullEmail": "navig@or.language"
     },
     {
       "company": "Kaufland",
-      "location": "N/A",
+      "location": "Heilbad Heiligenstadt",
       "niche": "Mechatronics",
       "email": "nav***@or.language",
-      "fullEmail": "***********"
+      "fullEmail": "navig@or.language"
     },
     {
       "company": "Stadtwerke Verkehrsgesellschaft Frankfurt am Main mbH",
-      "location": "N/A",
+      "location": "Deutschland",
       "niche": "Mechatronics",
       "email": "nav***@or.language",
-      "fullEmail": "***********"
+      "fullEmail": "navig@or.language"
     },
     {
       "company": "DMK Deutsches Milchkontor GmbH",
-      "location": "N/A",
+      "location": "Holdorf\nDuale Ausbildung",
       "niche": "Mechatronics",
       "email": "lau***@dmk.de",
-      "fullEmail": "***********"
+      "fullEmail": "laura.krabbe@dmk.de"
     },
     {
       "company": "SMS group GmbH",
-      "location": "N/A",
+      "location": "Hilchenbach",
       "niche": "Mechatronics",
       "email": "nav***@or.language",
-      "fullEmail": "***********"
+      "fullEmail": "navig@or.language"
     },
     {
       "company": "MiE medical imaging electronics GmbH",
-      "location": "N/A",
+      "location": "Seth\nkein Anschreiben nötig\nSchnellbewerbung\nDuale Ausbildung",
       "niche": "Mechatronics",
       "email": "job***@miegermany.de",
-      "fullEmail": "***********"
+      "fullEmail": "jobs@miegermany.de"
     },
     {
       "company": "DMK Deutsches Milchkontor GmbH",
-      "location": "N/A",
+      "location": "Bremen\nDuale Ausbildung",
       "niche": "Mechatronics",
       "email": "nav***@or.language",
-      "fullEmail": "***********"
+      "fullEmail": "navig@or.language"
     },
     {
       "company": "SCHOTTEL GmbH",
-      "location": "N/A",
+      "location": "Wismar\nDuale Ausbildung",
       "niche": "Mechatronics",
       "email": "nav***@or.language",
-      "fullEmail": "***********"
+      "fullEmail": "navig@or.language"
     }
   ],
   "Logistics": [
     {
       "company": "Flamro Brandschutz-Systeme GmbH",
-      "location": "N/A",
+      "location": "Leiningen",
       "niche": "Logistics",
       "email": "nav***@or.language",
-      "fullEmail": "***********"
+      "fullEmail": "navig@or.language"
     },
     {
       "company": "Deutsche Post DHL",
-      "location": "N/A",
+      "location": "Deutschland",
       "niche": "Logistics",
       "email": "lej***@dhl.com",
-      "fullEmail": "***********"
+      "fullEmail": "lejhubausbildung@dhl.com"
     },
     {
       "company": "DSV Global Transport and Logistics",
-      "location": "N/A",
+      "location": "Schweinfurt\nNeu\nkein Anschreiben nötig\nDuale Ausbildung",
       "niche": "Logistics",
       "email": "nav***@or.language",
-      "fullEmail": "***********"
+      "fullEmail": "navig@or.language"
     },
     {
       "company": "Deutsche Post DHL",
-      "location": "N/A",
+      "location": "Deutschland",
       "niche": "Logistics",
       "email": "han***@dhl.com",
-      "fullEmail": "***********"
+      "fullEmail": "handicap_naund@dhl.com"
     },
     {
       "company": "Kaufland",
-      "location": "N/A",
+      "location": "Möckmühl",
       "niche": "Logistics",
       "email": "nav***@or.language",
-      "fullEmail": "***********"
+      "fullEmail": "navig@or.language"
     },
     {
       "company": "Deutsche Post DHL",
-      "location": "N/A",
+      "location": "Deutschland",
       "niche": "Logistics",
       "email": "mar***@dhl.com",
-      "fullEmail": "***********"
+      "fullEmail": "marie.schoenberg@dhl.com"
     },
     {
       "company": "DPD Deutschland GmbH",
-      "location": "N/A",
+      "location": "Kesselsdorf",
       "niche": "Logistics",
       "email": "nav***@or.language",
-      "fullEmail": "***********"
+      "fullEmail": "navig@or.language"
     },
     {
       "company": "TESCOM EUROPE GMBH &amp; CO.KG",
-      "location": "N/A",
+      "location": "Selmsdorf\nDuale Ausbildung",
       "niche": "Logistics",
       "email": "nav***@or.language",
-      "fullEmail": "***********"
+      "fullEmail": "navig@or.language"
     },
     {
       "company": "Deutsche Post DHL",
-      "location": "N/A",
+      "location": "Deutschland",
       "niche": "Logistics",
       "email": "dir***@dhl.com",
-      "fullEmail": "***********"
+      "fullEmail": "dirk.opfer@dhl.com"
     },
     {
       "company": "BASF",
-      "location": "N/A",
+      "location": "Münster\nDuale Ausbildung",
       "niche": "Logistics",
       "email": "mel***@basf.com",
-      "fullEmail": "***********"
+      "fullEmail": "melissa.rahmani@basf.com"
     },
     {
       "company": "Deutsche Post DHL",
-      "location": "N/A",
+      "location": "Deutschland",
       "niche": "Logistics",
       "email": "jul***@dhl.com",
-      "fullEmail": "***********"
+      "fullEmail": "julia.schirmer@dhl.com"
     },
     {
       "company": "BASF",
-      "location": "N/A",
+      "location": "Ludwigshafen am Rhein\nDuale Ausbildung",
       "niche": "Logistics",
       "email": "mar***@basf.com",
-      "fullEmail": "***********"
+      "fullEmail": "mariya.budkevych@basf.com"
     },
     {
       "company": "DMK Deutsches Milchkontor GmbH",
-      "location": "N/A",
+      "location": "Edewecht\nDuale Ausbildung",
       "niche": "Logistics",
       "email": "nav***@or.language",
-      "fullEmail": "***********"
+      "fullEmail": "navig@or.language"
     },
     {
       "company": "Deutsche Bahn AG",
-      "location": "N/A",
+      "location": "Deutschland",
       "niche": "Logistics",
       "email": "nav***@or.language",
-      "fullEmail": "***********"
+      "fullEmail": "navig@or.language"
     },
     {
       "company": "Fressnapf Holding SE",
-      "location": "N/A",
+      "location": "Feuchtwangen\nDuale Ausbildung",
       "niche": "Logistics",
       "email": "nav***@or.language",
-      "fullEmail": "***********"
+      "fullEmail": "navig@or.language"
     },
     {
       "company": "Deutsche Post DHL",
-      "location": "N/A",
+      "location": "Deutschland",
       "niche": "Logistics",
       "email": "ann***@dhl.com",
-      "fullEmail": "***********"
+      "fullEmail": "anne.zimmer@dhl.com"
     },
     {
       "company": "Deutsche Post DHL",
-      "location": "N/A",
+      "location": "Deutschland",
       "niche": "Logistics",
       "email": "nic***@dhl.com",
-      "fullEmail": "***********"
+      "fullEmail": "nicole.clausen@dhl.com"
     },
     {
       "company": "Eckerle Technologies GmbH",
-      "location": "N/A",
+      "location": "Malsch\nDuale Ausbildung",
       "niche": "Logistics",
       "email": "nav***@or.language",
-      "fullEmail": "***********"
+      "fullEmail": "navig@or.language"
     },
     {
       "company": "Deutsche Post DHL",
-      "location": "N/A",
+      "location": "Deutschland",
       "niche": "Logistics",
       "email": "mar***@dhl.com",
-      "fullEmail": "***********"
+      "fullEmail": "marion.rummler@dhl.com"
     },
     {
       "company": "KuhnOdice Germany GmbH",
-      "location": "N/A",
+      "location": "Erndtebrück",
       "niche": "Logistics",
       "email": "nav***@or.language",
-      "fullEmail": "***********"
+      "fullEmail": "navig@or.language"
     }
   ],
   "Gastronomy": [
     {
       "company": "HDI Group",
-      "location": "N/A",
+      "location": "Hannover",
       "niche": "Gastronomy",
       "email": "nav***@or.userlanguage",
-      "fullEmail": "***********"
+      "fullEmail": "navig@or.userlanguage"
     },
     {
       "company": "BASF",
-      "location": "N/A",
+      "location": "Albersweiler\nNeu\nDuale Ausbildung",
       "niche": "Gastronomy",
       "email": "lin***@basf.com",
-      "fullEmail": "***********"
+      "fullEmail": "lina.wehr@basf.com"
     },
     {
       "company": "Nürburgring Holding GmbH, Nürburgring Hotels und Ferienpark",
-      "location": "N/A",
+      "location": "Nürburg",
       "niche": "Gastronomy",
       "email": "nav***@or.userlanguage",
-      "fullEmail": "***********"
+      "fullEmail": "navig@or.userlanguage"
     },
     {
       "company": "GM Gastromanagement GmbH",
-      "location": "N/A",
+      "location": "Berlin",
       "niche": "Gastronomy",
       "email": "nav***@or.userlanguage",
-      "fullEmail": "***********"
+      "fullEmail": "navig@or.userlanguage"
     },
     {
       "company": "Vodafone Deutschland",
-      "location": "N/A",
+      "location": "Königswinter\nNeu\nDuale Ausbildung",
       "niche": "Gastronomy",
       "email": "nav***@or.userlanguage",
-      "fullEmail": "***********"
+      "fullEmail": "navig@or.userlanguage"
     },
     {
       "company": "Schwarz Corporate Solutions KG",
-      "location": "N/A",
+      "location": "Neckarsulm\nDuale Ausbildung",
       "niche": "Gastronomy",
       "email": "nav***@or.userlanguage",
-      "fullEmail": "***********"
+      "fullEmail": "navig@or.userlanguage"
     },
     {
       "company": "Sander Holding GmbH &amp; Co. KG",
-      "location": "N/A",
+      "location": "Wiebelsheim\nNeu\nDuale Ausbildung",
       "niche": "Gastronomy",
       "email": "nav***@or.userlanguage",
-      "fullEmail": "***********"
+      "fullEmail": "navig@or.userlanguage"
     },
     {
       "company": "Notarkasse A.d.ö.R.",
-      "location": "N/A",
+      "location": "Obernburg a",
       "niche": "Gastronomy",
       "email": "nav***@or.userlanguage",
-      "fullEmail": "***********"
+      "fullEmail": "navig@or.userlanguage"
     },
     {
       "company": "Stadtreinigung Hamburg Anstalt des öffentlichen Rechts",
-      "location": "N/A",
+      "location": "Hamburg\nNeu\nDuale Ausbildung\nVollzeit",
       "niche": "Gastronomy",
       "email": "nav***@or.userlanguage",
-      "fullEmail": "***********"
+      "fullEmail": "navig@or.userlanguage"
     },
     {
       "company": "Speira GmbH",
-      "location": "N/A",
+      "location": "Neuss\nNeu\nDuale Ausbildung",
       "niche": "Gastronomy",
       "email": "nav***@or.userlanguage",
-      "fullEmail": "***********"
+      "fullEmail": "navig@or.userlanguage"
     },
     {
       "company": "Privathotels Dr. Lohbeck GmbH &amp; Co. KG",
-      "location": "N/A",
+      "location": "Ilsenburg\nNeu\nSchnellbewerbung\nDuale Ausbildung",
       "niche": "Gastronomy",
       "email": "nav***@or.userlanguage",
-      "fullEmail": "***********"
+      "fullEmail": "navig@or.userlanguage"
     },
     {
       "company": "Wicker Gesundheit &amp; Pflege",
-      "location": "N/A",
+      "location": "Bad Tabarz\nNeu\nDuale Ausbildung",
       "niche": "Gastronomy",
       "email": "nav***@or.userlanguage",
-      "fullEmail": "***********"
+      "fullEmail": "navig@or.userlanguage"
     },
     {
       "company": "Dussmann Service Deutschland GmbH",
-      "location": "N/A",
+      "location": "Dussmann Service Deutschland GmbH",
       "niche": "Gastronomy",
       "email": "nav***@or.userlanguage",
-      "fullEmail": "***********"
+      "fullEmail": "navig@or.userlanguage"
     },
     {
       "company": "Hoffmann Group",
-      "location": "N/A",
+      "location": "Nürnberg\nNeu\nDuale Ausbildung",
       "niche": "Gastronomy",
       "email": "nav***@or.userlanguage",
-      "fullEmail": "***********"
+      "fullEmail": "navig@or.userlanguage"
     },
     {
       "company": "Stadt Wuppertal K.d.ö.R.",
-      "location": "N/A",
+      "location": "Wuppertal\nNeu\nDuale Ausbildung\nTeilzeit",
       "niche": "Gastronomy",
       "email": "nav***@or.userlanguage",
-      "fullEmail": "***********"
+      "fullEmail": "navig@or.userlanguage"
     },
     {
       "company": "Hahne Holding GmbH",
-      "location": "N/A",
+      "location": "Garbsen\nNeu\nDuale Ausbildung",
       "niche": "Gastronomy",
       "email": "job***@hahne-holding.de",
-      "fullEmail": "***********"
+      "fullEmail": "jobs@hahne-holding.de"
     },
     {
       "company": "ERGO Group AG",
-      "location": "N/A",
+      "location": "Winsen",
       "niche": "Gastronomy",
       "email": "axe***@ergo.de",
-      "fullEmail": "***********"
+      "fullEmail": "axel.eckhoff@ergo.de"
     },
     {
       "company": "Provinzial Holding AG",
-      "location": "N/A",
+      "location": "Düsseldorf\nNeu\nDuale Ausbildung",
       "niche": "Gastronomy",
       "email": "nav***@or.userlanguage",
-      "fullEmail": "***********"
+      "fullEmail": "navig@or.userlanguage"
     },
     {
       "company": "EDEKA ZENTRALE Stiftung &amp; Co. KG",
-      "location": "N/A",
+      "location": "Wiefelstede\nNeu\nDuale Ausbildung",
       "niche": "Gastronomy",
       "email": "nav***@or.userlanguage",
-      "fullEmail": "***********"
+      "fullEmail": "navig@or.userlanguage"
     },
     {
       "company": "Öffentliche Versicherung Braunschweig",
-      "location": "N/A",
+      "location": "Braunschweig\nDuale Ausbildung",
       "niche": "Gastronomy",
       "email": "nav***@or.userlanguage",
-      "fullEmail": "***********"
+      "fullEmail": "navig@or.userlanguage"
     }
   ]
 };
@@ -1582,34 +2652,22 @@
             
             let html = '';
             data.forEach((row, index) => {
-                let isNursing = niche === 'Nursing';
-                
-                let emailHtml = isNursing 
-                    ? `<span class="text-blue-600 font-semibold">${row.fullEmail}</span>`
-                    : `
-                     <div class="tooltip">
-                         <span class="text-blue-600 font-semibold blur-text">${row.email}</span>
-                         <span class="tooltiptext">Upgrade to The Pro List for full access</span>
-                     </div>
-                     <div class="tooltip">
-                         <i class="fa-regular fa-copy copy-icon"></i>
-                         <span class="tooltiptext">Upgrade to copy full email</span>
-                     </div>
-                    `;
-                
-                let statusHtml = isNursing
-                    ? `<span class="bg-green-100 text-green-800 font-black px-2 py-1 rounded shadow-sm text-xs border border-green-200"><i class="fa-solid fa-gift"></i> متاح مجاناً</span>`
-                    : `<span class="text-green-600 font-black text-sm"><i class="fa-solid fa-check-circle"></i> Active</span>`;
-
                 html += `
-                    <tr class="hover:bg-gray-50 transition-colors">
-                        <td class="font-semibold text-gray-800 py-3">${row.company}</td>
-                        <td class="text-gray-600 py-3">${row.location}</td>
-                        <td class="py-3"><span class="bg-gray-100 text-gray-800 px-2 py-1 rounded text-xs font-bold border border-gray-200">${row.niche}</span></td>
-                        <td class="py-3">${statusHtml}</td>
-                        <td class="py-3">
+                    <tr>
+                        <td class="font-semibold text-gray-800">${row.company}</td>
+                        <td class="text-gray-600">${row.location}</td>
+                        <td><span class="bg-gray-100 text-gray-800 px-2 py-1 rounded text-xs font-bold">${row.niche}</span></td>
+                        <td><span class="text-green-600 font-black"><i class="fa-solid fa-check-circle"></i> Active</span></td>
+                        <td>
                             <div class="flex items-center gap-2">
-                                ${emailHtml}
+                                <div class="tooltip">
+                                    <span class="text-blue-600 font-semibold blur-text">${row.email}</span>
+                                    <span class="tooltiptext">Upgrade to The Pro List for full access</span>
+                                </div>
+                                <div class="tooltip">
+                                    <i class="fa-regular fa-copy copy-icon"></i>
+                                    <span class="tooltiptext">Upgrade to copy full email</span>
+                                </div>
                             </div>
                         </td>
                     </tr>

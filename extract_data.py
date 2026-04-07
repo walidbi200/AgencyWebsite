@@ -3,7 +3,7 @@ import json
 import os
 import re
 
-# We will read 20 valid rows per niche. A valid row has an email.
+# We will read 20 valid rows per niche. A valid row has a real email.
 niche_paths = {
     'Nursing': r'c:\Users\ZhuFan\Desktop\AgencyWebsite\email_list_2\Pflegefachmann-frau\jobs.csv',
     'IT': r'c:\Users\ZhuFan\Desktop\AgencyWebsite\email_list\Fachinformatiker-in\jobs.csv',
@@ -12,12 +12,28 @@ niche_paths = {
     'Gastronomy': r'c:\Users\ZhuFan\Desktop\AgencyWebsite\email_list\Koch-Koechin\jobs.csv'
 }
 
-def clean_location(location):
-    # Extract just the first word (city) if possible, or leave it small.
-    if not location:
+BLACKLISTED_EMAILS = [
+    'tcd@a.customvendorconsents',
+    'eins@z.du',
+    'beratung@ludwig-fresenius.de', # Often generic
+]
+
+def clean_location(location, csv_row):
+    # Try to find a city name. 
+    # Usually in the job_title or job_url or location column
+    if not location or location == "N/A":
+        # Scrape from job_title if possible (it often has '10367 Berlin' etc)
+        title = csv_row.get('job_title', '')
+        # Regex for German zip code + city
+        match = re.search(r'\b\d{5}\s+([A-Za-zäöüÄÖÜ\s-]+)', title)
+        if match:
+            return match.group(1).strip()
         return "Deutschland"
+        
     # Basic cleanup: take string before comma or space-dash-space
     part = location.split(',')[0].strip()
+    # Remove leading zip codes if present
+    part = re.sub(r'^\d{5}\s+', '', part)
     return part
 
 def partial_blur_email(email):
@@ -44,17 +60,25 @@ for niche_name, csv_path in niche_paths.items():
             count = 0
             for row in reader:
                 email = row.get('email', '').strip()
-                if email and '@' in email:
-                    data.append({
-                        'company': row.get('company', '').strip(),
-                        'location': clean_location(row.get('location', '')),
-                        'niche': niche_name,
-                        'email': partial_blur_email(email),
-                        'fullEmail': email # Keeping this if we want to add copy behavior, though instructions say "For blurred emails... upgrade for full access" so we only show blurred.
-                    })
-                    count += 1
-                    if count >= 20:
-                        break
+                if not email or '@' not in email:
+                    continue
+                
+                # Filter blacklisted
+                if any(black in email for black in BLACKLISTED_EMAILS):
+                    continue
+                    
+                location = clean_location(row.get('location', ''), row)
+                
+                data.append({
+                    'company': row.get('company', '').strip(),
+                    'location': location,
+                    'niche': niche_name,
+                    'email': partial_blur_email(email),
+                    'fullEmail': email 
+                })
+                count += 1
+                if count >= 20:
+                    break
     result[niche_name] = data
 
 # Save to JS file

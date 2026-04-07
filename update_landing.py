@@ -1,7 +1,7 @@
 import re
 import os
 
-with open(r'c:\Users\ZhuFan\Desktop\AgencyWebsite\landing.html', 'r', encoding='utf-8') as f:
+with open(r'c:\Users\ZhuFan\Desktop\AgencyWebsite\index.html', 'r', encoding='utf-8') as f:
     html = f.read()
 
 with open(r'c:\Users\ZhuFan\Desktop\AgencyWebsite\niche_data.js', 'r', encoding='utf-8') as f:
@@ -565,6 +565,6 @@ js_logic = """
 """
 html = html.replace('</body>', js_logic + '\n</body>')
 
-with open(r'c:\Users\ZhuFan\Desktop\AgencyWebsite\landing.html', 'w', encoding='utf-8') as f:
+with open(r'c:\Users\ZhuFan\Desktop\AgencyWebsite\index.html', 'w', encoding='utf-8') as f:
     f.write(html)
 print("Updated landing.html successfully.")
